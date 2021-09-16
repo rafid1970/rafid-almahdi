@@ -1,0 +1,347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr" class="js">
+
+<!-- Mirrored from web.engr.oregonstate.edu/~rosulekm/scbib/index.php?n=Paper.Y86 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 Apr 2018 19:52:42 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=ISO-8859-1" /><!-- /Added by HTTrack -->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+	<title>An Annotated Bibliography of Practical Secure Computation Paper/How to generate and exchange secrets</title>
+	<link rel='stylesheet' href='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/skins/osu_coe/css/style.css' type='text/css' />
+	<link rel='stylesheet' href='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/skins/osu_coe/css/color.css' type='text/css' />
+	<link type='text/css' rel='stylesheet' media='all' href='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/skins/osu_coe/css/reset-fonts-grids.css'> 
+	<link type='text/css' rel='stylesheet' media='all' href='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/skins/osu_coe/css/osu-base.css'> 
+	<link type='text/css' rel='stylesheet' media='all' href='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/skins/osu_coe/css/main.css'> 
+	<link type='text/css' rel='stylesheet' media='all' href='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/skins/osu_coe/css/defaults.css'> 
+	<link type='text/css' rel='stylesheet' media='all' href='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/skins/osu_coe/css/osu_drupal_1_11.css'> 
+	<link type='text/css' rel='stylesheet' media='all' href='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/skins/osu_coe/css/osu_confident.css'>  
+	<link type='text/css' rel='stylesheet' media='print' href='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/skins/osu_coe/css/print.css'> 
+ 
+	<!--HTMLHeader--><style type='text/css'><!--
+span.anchor {
+	float: left;
+	font-size: 60%;
+	margin-left: -1em;
+	width: 1em;
+    position:relative; top:-0.1em;
+	text-align: center;
+}
+span.anchor a { text-decoration: none; }
+span.anchor a:hover { text-decoration: underline; }
+ol.toc { text-indent:-25px; list-style: none; margin-bottom:5px; }
+ol ol.toc { margin-left:-24px; text-indent:-24px; }
+div.tocfloat { font-size: smaller; margin-bottom: 10px;
+    border-top: 1px dotted #555555; border-bottom: 1px dotted #555555;
+    padding-top: 5px; 
+    width: 38%; float: right; margin-left: 10px; clear: right;
+    margin-right:-21px; padding-right: 13px; padding-left: 13px;
+    background-color: #eeeeee; }
+div.toc { font-size: smaller; 
+    border: 1px dotted #cccccc;
+    background: #f7f7f7;
+    margin-bottom: 10px; }
+div.toc p { background-color: #f9f6d6;
+    padding: 5px;
+    border-bottom:  1px dotted #cccccc; }span.miniedit { cursor: pointer; color: transparent; font-size: smaller; position: absolute; padding:.1em .5em; filter:alpha(opacity=0); z-index:2; } 
+  span.miniedit:hover { color: black; background: #ddd; background: rgba(240, 240, 240, .5);filter:alpha(opacity=70);}.editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+#siteheader .sitetitle a{height:49px; background: url(../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/skins/pmwiki/pmwiki-32.gif) left top no-repeat} #siteheader .sitetitle a, #siteheader .sitetag{padding-left: 350px} #siteheader .sitetag{margin-top: -21px}
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none;}
+
+--></style><script type="text/javascript">
+function toggle(obj, hide, show) {
+    var elstyle = document.getElementById(obj).style;
+    var text    = document.getElementById(obj + "tog");
+    if(!hide) { var hide = "hide"; }
+    if(!show) { var show = "show"; }
+    if (elstyle.display == 'none') {
+        elstyle.display = 'block';
+        text.innerHTML  = hide;
+    } else {
+        elstyle.display = 'none';
+        text.innerHTML  = show;
+    }
+}
+</script>
+	<link href='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/commentboxplus/commentboxplus.css' rel='stylesheet' type='text/css' />
+  <link rel='stylesheet' href='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/wsplus/wsplus.css' 
+    type='text/css' />
+  <!--[if IE]><style type='text/css' media='screen'>
+    body { behavior:url('https://secure.engr.oregonstate.edu/wiki/pmwiki/pub/wsplus/csshover.htc'); }
+    .rollover * { visibility: visible; }
+  </style><![endif]-->
+
+<script type='text/javascript' src='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/codemirror-5.15.2/lib/codemirror.js'></script>
+<link rel='stylesheet' type='text/css' href='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/codemirror-5.15.2/lib/codemirror.css' />
+
+<script type='text/javascript' src='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/cm/pmwiki.js'></script>
+<link rel='stylesheet' type='text/css' href='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/cm/pmwiki.css' />
+<style type='text/css'><!--
+
+.cmblocktext.cm-pmwiki-markup {
+  padding: 0;
+  border: none;
+}
+.cmblocktext.cm-pmwiki-markup pre {
+  color: black;
+  background-color: #fafafa;
+  padding: 0.5em;
+}
+
+--></style>
+<script type="text/javascript" src="pub/MathJax/MathJax.js">MathJax.Hub.Config({
+    extensions: ["tex2jax.js","TeX/AMSmath.html","TeX/AMSsymbols.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: { inlineMath: [ ['{\$','\$}'] ], displayMath: [ ['{\$\$','\$\$}'] ] } });</script>  <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/css/farm.css' />
+<link rel='stylesheet' type='text/css' href='pub/css/local.css' />
+
+</head>
+<body>
+
+<!--[if IE 6]>
+<div id="ie6" class="iefix">
+<![endif]-->
+<!--[if IE 7]>
+<div id="ie7" class="iefix">
+<![endif]-->
+<!-- START DRUPAL NAV LINK -->
+<a name="top" id="navigation-top"></a> 
+<div id="skip-to-nav">
+	<a href="#navigation"> Skip to Navigation </a> 
+</div>
+
+<!-- END DRUPAL NAV LINK -->
+<!--  BEGIN OSU TOP HAT -->
+<div id="osu-top-hat" style="border-bottom-color: #dbd6d0;">
+	<div id="osu-top-hat-interior" class="wrapper4">
+		<a href="http://oregonstate.edu/" title="Oregon State University"><img src='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/skins/osu_coe/css/osu-tag.gif' alt="Oregon State University" class="tag"></a> 
+		<div class="wikicmds utility">
+
+<!--PageActionFmt-->
+<ul><li class='browse'>      <a accesskey=''  rel='nofollow'  class='selflink' href='indexcb48.html?n=Paper.Y86'>View</a>
+</li><li class='edit'>      <a accesskey='e'  rel='nofollow'  class='wikilink' href='index3636.html?n=Paper.Y86?action=edit'>Edit</a>
+</li><li class='diff'>   <a accesskey='h'  rel='nofollow'  class='wikilink' href='index706c.html?n=Paper.Y86?action=diff'>History</a>
+</li><li class='print'>     <a accesskey=''  rel='nofollow'  class='wikilink' href='index37b0.html?n=Paper.Y86?action=print'>Print</a>
+</li></ul>
+
+<!--/PageActionFmt-->
+		</div>
+	</div>
+</div>
+<!--  END OSU TOP HAT -->
+<div id="top-bg" style="background-color:#D1D3D3;">
+<!-- START YUI GRID DOCUMENT TYPE DEFINITION - checks for left content, if there is, adds the defnition for YUI document class t2 -->
+	<div id="doc4">
+<!-- END YUI GRID DOCUMENT TYPE DEFINITION -->
+		<div id="page">
+			<div id="page-inner">
+				<div id="hd" role="banner" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; ">
+<!-- START DRUPAL HEADER -->
+					<div id="header">
+						<div id="header-inner" class="clear-block">
+							<div id="title">
+							<div id="department-name">
+        										<a href="http://engineering.oregonstate.edu/">College of Engineering</a>
+        									</div>
+								<h1 id="site-name">
+<!--PageTitleGroupFmt-->
+									<a href='index-2.html'>An Annotated Bibliography of Practical Secure Computation</a> 
+<!--/PageTitleGroupFmt-->
+								</h1>
+							</div>
+						</div>
+<!-- /#header-inner -->
+					</div>
+<!-- /#header -->
+<!-- END DRUPAL HEADER -->
+				</div>
+<!-- /hd -->
+				<div id="bd" role="main">
+<!-- START DRUPAL TOP HORIZONTAL BAR -->
+<!-- END DRUPAL TOP HORIZONTAL BAR -->
+					<div id="yui-main">
+						<div class="yui-b">
+<!-- START CHECK FOR RIGHT COL - if there is right content, open a grid holder and unit for main content -->
+<!--  END CHECK FOR RIGHT COL -->
+							<div class="interior">
+<!-- START DRUPAL MAIN -->
+								
+									<div id="main-inner" class="clear-block with-navbar">
+									<br />
+										<div id="content">
+											<div id="content-inner">
+												<div id="content-header">
+													<h2 class="title">
+<!--PageTitleFmt-->
+														<a href='indexcb48.html?n=Paper.Y86'>How to generate and exchange secrets</a> 
+<!--/PageTitleFmt-->
+													</h2>
+												</div>
+<!-- /#content-header -->
+												<div id="content-area" class="region region-content">
+													<div id="bcontainer">
+														<div id="content">
+															<div id="main">
+															<!--PageText-->
+<div id='wikitext'>
+<h2>How to generate and exchange secrets</h2>
+<p><span style='font-size:120%'><em>Andrew Yao</em></span>
+<br />FOCS 1986 [<a class='urllink' href='http://www.csee.wvu.edu/~xinl/library/papers/comp/Yao1986.pdf' rel='nofollow'>pdf</a>] [<a class='urllink' href='http://dblp.uni-trier.de/rec/bibtex/conf/focs/Yao86' rel='nofollow'>bibtex</a>]
+</p>
+<div class='vspace'></div><hr />
+<p class='vspace'>This paper is often cited as the paper that introduced <a class='wikilink' href='index8798.html?n=Glossary.GarbledCircuit'>garbled circuits</a>, although the concept apparently only appeared in oral presentations of Yao's work. A precise description and full proof of Yao's protocol is given in <a class='wikilink' href='index8f77.html?n=Paper.LP09'>LP09</a>.
+</p>
+<div class='vspace'></div><h3>See also:</h3>
+<p><a class='wikilink' href='index8f77.html?n=Paper.LP09'>LP09</a>
+</p>
+<div class='vspace'></div><h3>Categories:</h3>
+<p><a class='wikilink' href='index7d9b.html?n=PaperCategory.Garbling'>Garbling</a> <a class='wikilink' href='index9dcc.html?n=PaperCategory.Paradigms'>Paradigms</a>
+</p>
+</div>
+
+															</div>
+															<div id="right">
+															<!--PageSearchFmt--><!--/PageSearchFmt-->
+																<div id="links">
+																<!--PageRightFmt-->
+																<ul><li><a class='wikilink' href='indexf462.html?n=Main.HomePage'>Home page</a>
+</li><li>All papers, by:
+<ul><li>.. <a class='wikilink' href='index4c80.html?n=Main.AllPapersByCategory'>category</a>
+</li><li>.. <a class='wikilink' href='index4ab1.html?n=Main.AllPapers'>author names</a>
+</li><li>.. <a class='wikilink' href='index8eb5.html?n=Main.AllPapersByDate'>publication date</a>
+</li><li>.. <a class='wikilink' href='index7c1d.html?n=Main.AllPapersByLastAdded'>recently added</a>
+</li><li>.. <a class='wikilink' href='index04f6.html?n=Main.AllPapersByLastUpdate'>recently updated</a>
+</li></ul></li><li><a class='wikilink' href='index3b29.html?n=Glossary.Index'>Glossary</a>
+</li><li><a class='wikilink' href='index85c1.html?n=Main.About'>About</a>
+</li><li>Just <a class='wikilink' href='indexf333.html?n=Main.GettingStarted'>getting started</a> in MPC?
+</li><li><a class='wikilink' href='index6457.html?n=Main.Guidelines'>Guidelines</a>
+</li><li><a class='wikilink' href='indexe90d.html?n=Main.TodoList'>Todo List</a>
+</li></ul><p class='vspace sidehead'> Search Papers
+</p><ul><li><form  class='wikisearch' action='https://web.engr.oregonstate.edu/~rosulekm/scbib/index.php?n=Paper.Y86' method='get'><input type='hidden' name='n' value='Paper.Y86' /><input type='hidden' name='group' value='Paper' /><input type='hidden' name='fmt' value='#papers' /><input type='hidden' name='order' value='SideBar' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value=''   class='inputbox searchbox' size='15' /><input type='submit' 
+    class='inputbutton searchbutton' value='go' /></form>
+</li></ul><p class='vspace sidehead'> Bibliography Categories
+</p><div class='fpltemplate'><ul><li><a class='wikilink' href='indexbef5.html?n=PaperCategory.Circuit'>Circuit constructions &amp; optimizations</a>
+</li><li><a class='wikilink' href='index59da.html?n=PaperCategory.CutAndChoose'>Cut-and-choose mechanisms</a>
+</li><li><a class='wikilink' href='index7d9b.html?n=PaperCategory.Garbling'>Garbling methods</a>
+</li><li><a class='wikilink' href='index33db.html?n=PaperCategory.Implementations'>Implementations</a>
+</li><li><a class='wikilink' href='indexfbef.html?n=PaperCategory.OTExtension'>Oblivious transfer extension</a>
+</li><li><a class='wikilink' href='index9dcc.html?n=PaperCategory.Paradigms'>Protocol paradigms</a>
+</li><li><a class='wikilink' href='index4a54.html?n=PaperCategory.Reference'>Reference works</a>
+</li><li><a class='wikilink' href='index0527.html?n=PaperCategory.SecurityModels'>Security models</a>
+</li><li><a class='wikilink' href='indexb67d.html?n=PaperCategory.SpecialPurpose'>Special-purpose protocols</a>
+</li></ul>
+</div>
+<div class='vspace'></div>
+
+																<!--/PageRightFmt-->
+																</div>
+															</div>
+														</div>
+														<div id="footer_container">
+															<div id="footer">
+
+															</div>
+														</div>
+														<div id="credits">
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+<!-- /#content-inner -->
+										</div>
+<!-- /#content -->
+									</div>
+<!-- /#main-inner -->
+								
+<!-- /#main -->
+<!-- END DRUPAL MAIN -->
+							</div>
+<!-- interior -->
+<!-- START CHECK FOR RIGHT COL - if there is a content, end the main content's grid unit, open the right content's grid unit -->
+<!-- END CHECK FOR RIGHT COL - grid unit and holder closed -->
+						</div>
+<!-- /yui-b -->
+					</div>
+<!-- /yui-main -->
+<!-- START CHECK FOR LEFT COL -->
+<!--  END CHECK FOR LEFT COL -->
+				</div>
+<!-- /#bd -->
+			</div>
+<!-- /#page-inner -->
+		</div>
+<!-- /#page -->
+	</div>
+<!-- /doc -->
+</div>
+<!-- top-bg -->
+<div id="ft" role="contentinfo" class="yui-t2">
+	<div id="ft-inner">
+<!-- START CONTACT -->
+		<div class="yui-b">
+			<div class="interior">
+				<div id="contact">
+					<div id="contact-inner" class="region region-contact">
+<!--  START DEFAULT OSU FOOTER TEXT -->
+						<p class="osu-footer-text content">
+							<a href="http://oregonstate.edu/copyright">Copyright</a> &copy;2018<br> Oregon State University<br> <a href="http://oregonstate.edu/disclaimer">Disclaimer</a> 
+						</p>
+
+<!--  END START DEFAULT OSU FOOTER TEXT -->
+					</div>
+<!-- /#contact-inner -->
+				</div>
+<!-- /#contact -->
+			</div>
+<!-- /interior -->
+		</div>
+<!-- END CONTACT -->
+		<div class="yui-b first">
+			<div class="interior">
+<!-- START FOOTER -->
+															<div class="osu-footer-text content">
+															<!--PageFooterFmt-->
+															<p><small>Page last modified on August 17, 2014, at 10:05 PM</small>
+</p>
+
+															
+															<!--/PageFooterFmt-->
+															</div>
+
+			</div>
+<!-- /interior -->
+		</div>
+<!-- END FOOTER -->
+	</div>
+<!-- /ft-inner -->
+</div>
+<!-- /ft -->
+<!--[if IE 6]>
+</div>
+<![endif]-->
+<!--[if IE 7]>
+</div>
+<![endif]-->
+<!--HTMLFooter--><script type="text/javascript"
+    src="../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/autoplay.js"></script>
+</body>
+
+<!-- Mirrored from web.engr.oregonstate.edu/~rosulekm/scbib/index.php?n=Paper.Y86 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 Apr 2018 19:52:43 GMT -->
+</html>

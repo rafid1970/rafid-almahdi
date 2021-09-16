@@ -1,0 +1,373 @@
+<html>
+  
+<!-- Mirrored from web.engr.oregonstate.edu/~rosulekm/cs321/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 Apr 2018 19:30:47 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>CS 321</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif|Vollkorn' rel='stylesheet' type='text/css'>
+    <script src="../../../use.fontawesome.com/9274001210.js"></script>
+    <link rel="stylesheet" type="text/css" href="../home.css"/>
+    <script src="../www/jquery.min.js"></script>
+    <script src="../home.js"></script>
+    <style type="text/css">
+        .schedread {
+            float: none;
+            text-align: left;
+            margin-left: 7em;
+            font-size: inherit;
+            width: auto;
+        }
+        .schedread span {
+            font-size: 0.9em;
+        }
+        .scheditem {
+            margin-left: 7em;
+        }
+        .schedlink {
+            margin-top: 0.5em;
+        }
+
+        ul.letters {
+          list-style-type: none;
+          margin-left: 0;
+          padding-left: 40px;
+          text-indent: -40px;
+        }
+        ul.letters li:before {
+          display: inline-block; 
+          width: 40px;
+          text-indent: 0;
+          text-align: right;
+          content: "X:";
+          font-size: 0.9em;
+        }
+        ul.letters li.li-e:before { content: "E:\a0"; }
+        ul.letters li.li-f:before { content: "F:\a0"; }
+        ul.letters li.li-fhp:before { content: "FHP:\a0"; }
+        ul.letters li.li-m:before { content: "M:\a0"; }
+        ul.letters li.li-hu:before { content: "HU:\a0"; }
+
+    </style>
+  </head>
+  <body>
+    <div class="topfold">
+      <img src="cs321.png" style="width: 300px">
+    </div>
+    <div class="header">Theory of Computation</div>
+    <div class="botfold"> 
+      <div class="affiliation">Oregon State University, Fall 2017</div>
+      <ul class="contact fa-ul">
+        <li> <i class="fa fa-li fa-calendar-check-o"></i><span>MWF @ 12, in WITH 109</span></li>
+        <li> <i class="fa fa-li fa-user"></i><span>Prof. <a href="../index.html">Mike Rosulek</a><br>rosulekm@eecs.oregonstate.edu<br>Office hours MW1-2, KEC 3063</span></li>
+        <li> <i class="fa fa-li fa-question-circle"></i><span>TA Spencer Kresge<br>kresges@oregonstate<br>Office hours TR 10-11</span></li>
+        <li> <i class="fa fa-li fa-question-circle"></i><span>TA Naimisha Saireddy<br>saireddn@oregonstate<br>Office hours T 3-4, R 11-12</span></li>
+        <li> <i class="fa fa-li fa-question-circle"></i><span>TA Kimia Tajik<br>tajikk@oregonstate<br>Office hours W 4-6</span></li>
+
+      </ul>
+    </div>
+    <div class="nav"> <a href="#news" class="navlink">news</a><a href="#materials" class="navlink">materials</a><a href="#schedule" class="navlink">schedule</a></div>
+    <div class="content">
+      <p>Theory of computation is about understanding the limits of what computers can do.</p>
+      <p>Note: I am teaching two sections of 321 this term (an honors section and a non-honors section). The two sections have different structure, different homeworks, different requirements. This page is for the <b>non-honors section</b>!</p>
+
+      <h1>News<a name="news" class="anchor">&#8203;</a></h1>
+      <div class="schedule narrow">
+        <div class="schedline">
+          <div class="scheddate">Dec 1</div>
+          <div class="scheditem"><a href="study2.pdf">Final exam study guide</a> posted.</div>
+        </div>
+        <div class="schedline">
+          <div class="scheddate">Nov 26</div>
+          <div class="scheditem"><a href="hw7.pdf">Homework 7</a> posted.</div>
+        </div>
+        <div class="schedline">
+          <div class="scheddate">Nov 22</div>
+          <div class="scheditem"><b>Final exam</b> will be December 6 at 6-8pm.</div>
+        </div>
+        <div class="schedline">
+          <div class="scheddate">Nov 15</div>
+          <div class="scheditem"><a href="hw6.pdf">Homework 6</a> posted.</div>
+        </div>
+        <div class="schedline">
+          <div class="scheddate">Oct 30</div>
+          <div class="scheditem"><a href="hw5.pdf">Homework 5</a> posted.</div>
+        </div>
+        <div class="schedline">
+          <div class="scheddate">Oct 23</div>
+          <div class="scheditem"><a href="study1.pdf">Midterm study guide</a> posted. Remember that the midterm is this Wednesday.</div>
+        </div>
+        <div class="schedline">
+          <div class="scheddate">Oct 16</div>
+          <div class="scheditem"><a href="hw4.pdf">Homework 4</a> posted, due Oct 23 morning. Also, solutions to infamous <a href="hw3sol.pdf">Homework 3 problem 4</a> posted.</div>
+        </div>
+        <div class="schedline">
+          <div class="scheddate">Oct 9</div>
+          <div class="scheditem"><a href="hw3.pdf">Homework 3</a> posted, due Oct 16 morning.</div>
+        </div>
+        <div class="schedline">
+          <div class="scheddate">Oct 2</div>
+          <div class="scheditem"><a href="hw2.pdf">Homework 2</a> posted, due Oct 9 morning.</div>
+        </div>
+        <div class="schedline">
+          <div class="scheddate">Sep 26</div>
+          <div class="scheditem">TA office hours announced (see info above).</div>
+        </div>
+        <div class="schedline">
+          <div class="scheddate">Sep 25</div>
+          <div class="scheditem"><a href="hw1.pdf">Homework 1</a> posted, it's due Oct 2 morning. Mike's office hours will be MW after class.</div>
+        </div>
+        <div class="schedline">
+          <div class="scheddate">Sep 20</div>
+          <div class="scheditem"><a href="hw0.pdf">Homework 0</a> posted. It's not for grade.</div>
+        </div>
+        <div class="schedline">
+          <div class="scheddate">Sep 15</div>
+          <div class="scheditem">The website is ready. Let's do some CStheory!</div>
+        </div>
+      </div>
+
+      <h1>Materials<a name="materials" class="anchor">&#8203;</a></h1>
+      <h2>Handouts</h2>
+          <ul>
+          <li> <a href="syll.pdf">Syllabus</a></li>
+          <li> <a href="study1.pdf">Midterm study guide</a></li>
+          <li> <a href="study2.pdf">Final exam study guide</a></li>
+          </ul>
+      <h2>Homeworks</h2>
+          <ul>
+          <li> <a href="hw0.pdf">HW0</a> (not for grade)</li>
+          <li> <a href="hw1.pdf">HW1</a>, due Oct 2 (morning)</li>
+          <li> <a href="hw2.pdf">HW2</a>, due Oct 9 (morning)</li>
+          <li> <a href="hw3.pdf">HW3</a>, due Oct 16 (morning); <a href="hw3sol.pdf">solution to #4</a></li>
+          <li> <a href="hw4.pdf">HW4</a>, due Oct 23 (morning)</li>
+          <li> <a href="hw5.pdf">HW5</a>, due Nov 6 (morning)</li>
+          <li> <a href="hw6.pdf">HW6</a>, due Nov 27 (morning)</li>
+          <li> <a href="hw7.pdf">HW7</a>, due Dec 1 (night)</li>
+          </ul>
+          <p>Hand them <a href="https://oregonstate.instructure.com/courses/1648332/assignments">here, on Canvas</a>, in PDF format.</p>
+
+      <h2>Primary Resources</h2>
+        <ul class=letters>
+        <li class="li-e"><a href="http://jeffe.cs.illinois.edu/teaching/algorithms/">Jeff Erickson lecture notes</a> (scroll down to "Models of Computation Notes")
+        <li class="li-fhp"><a class=pdf href="http://sarielhp.org/teach/notes/373/book.pdf">Fleck/Har-Peled lecture notes</a>
+        <li class="li-f"><a class=pdf href="https://www.cl.cam.ac.uk/teaching/1011/RLFA/LectureNotes.pdf">Marcelo Fiore lecture notes</a>
+        <li class="li-m"><a class=pdf href="http://tuvalu.santafe.edu/~moore/automata-notes">Cristopher Moore lecture notes</a>
+        <li class="li-hu"><a href="https://archive.org/details/HopcroftUllman_cinderellabook">Intro to Automata Theory, Languages, and Computation</a>, a classic textbook by Hopcroft &amp; Ullman
+        </ul>
+    
+      <h2>Other Resources</h2>
+
+        <ul>
+        <li> <a href="http://madebyevan.com/fsm/">Tool for drawing state machines</a>, by Evan Wallace
+        <li> <a href="https://regexr.com/">RegExr</a> tool for playing with "real world" regular expressions (by Grant Skinner)
+        <li> Chart of <a href="https://dev.w3.org/html5/html-author/charref">special characters</a> (copy/paste math symbols into your assignments)
+        </ul>
+
+      <h1>Schedule<a name="schedule" class="anchor">&#8203;</a></h1>
+        <div class="schedule" id="theschedule"></div>
+
+
+    </div>
+  </body>
+
+<!-- Mirrored from web.engr.oregonstate.edu/~rosulekm/cs321/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 Apr 2018 19:34:02 GMT -->
+</html>
+
+
+
+<script type="text/javascript">
+    var lec = [
+        { title: "Course overview, strings, languages",
+           read: "E 1, FHP 2.1, F 1.1",
+           vwb: "1"
+        },
+
+        { title: "Deterministic finite automata (DFAs)",
+           read: "E 3.1-3.5, FHP 2.2-3.4, F 2.1, M 1, HU 2.1-2.2",
+           vwb: 2
+        },
+
+        { title: "Extended transition function, proving correctness",
+           read: "E 3.1-3.5, M 1, HU 2.1-2.2",
+            vwb: 3
+        },
+
+        { title: "Closure properties (product construction)",
+           read: "E 3.5, FHP 4.1-4.3, M 1",
+            vwb: 4
+        },
+
+        { title: "Nondeterministic finite automata (NFAs)",
+           read: "E 4.1-4.2, FHP 5, F 2.2, M 2, HU 2.3",
+            vwb: 5
+        },
+
+        { title: "More NFA examples, equivalence of DFAs &amp; NFAs (subset construction)",
+           read: "E 4.5, FHP 7, F 2.3, HU 2.4",
+            vwb: 6
+        },
+
+        { title: "Epsilon transitions, more closure properties",
+           read: "E 4.3, FHP 6, HU 2.4",
+            vwb: 7
+        },
+
+        { title: "More closure properties, regular expressions",
+           read: "E 2.1-2.3, FHP 4.4, F 1.2, M 6, HU 2.5",
+            vwb: 8
+        },
+
+        { title: "More regular expression examples; equivalence to NFAs",
+           read: "E 4.6,4.9, FHP 7-8, F 3-4, HU 2.5",
+            vwb: 9
+        },
+
+        { title: "Equivalence of regular expressions &amp; NFAs, continued",
+           read: "E 4.6,4.9, FHP 7-8, F 3-4",
+            vwb: 10
+        },
+
+        { title: "Non-regular languages",
+           read: "FHP 9.1-9.2",
+            vwb: 11
+        },
+
+        { title: "Pumping lemma for regular languages",
+           read: "FHP 9.3-9.4, F 5.1-5.2, M 5, HU 3.1",
+            vwb: 12
+        },
+
+        { title: "More pumpkin lemma examples",
+           read: "FHP 9.3-9.4, F 5.1-5.2, M 5",
+            vwb: 13
+        },
+
+        { title: "Context-free grammars (CFGs)",
+           read: "E 5.1-5.3, FHP 11, F 6, M 9, HU 4.1-4.3",
+            vwb: 14
+        },
+
+        { title: "Pushdown automata <a class='pubtag' href='https://www.youtube.com/watch?v=JUQDzj6R3p4'>happy birthday Weird Al</a>",
+           read: "FHP 13, M 8, HU 5.1-5.2",
+            vwb: 15
+        },
+
+        { title: "Equivalence of pushdowns &amp; CFGs",
+           read: "FHP 15,17, HU 5.3",
+            vwb: 16
+        },
+
+        { title: "Equivalence of pushdowns &amp; CFGs, continued",
+           read: "FHP 15,17, HU 5.3",
+            vwb: 17
+        },
+
+        { title: "Parse trees, ambiguity, Chomsky normal form",
+           read: "E 5.8, FHP 12, HU 5.3",
+            vwb: 18
+        },
+
+        { title: "Pumping lemma for context-free languages",
+           read: "FHP 16.3-16.4, HU 6.1",
+            vwb: 19
+        },
+
+        { title: "CYK parsing algorithm",
+           read: "FHP 18, HU 6.3",
+        },
+
+        { title: "Pumping lemma for context-free languages, continued",
+           read: "FHP 16.3-16.4, M 10, HU 6.1",
+            vwb: 21
+        },
+
+        { title: "Closure properties of context-free languages",
+           read: "FHP 14.2",
+            vwb: 22
+        },
+
+        { title: "Turing machines",
+           read: "E 6.1-6.5, FHP 21, M 13, HU 7.1-7.2",
+            vwb: 23
+        },
+
+        { title: "More TM examples",
+           read: "E 6.1-6.5, FHP 21, M 13, HU 7.4",
+            vwb: 24
+        },
+
+        { title: "TM variants; universality; Church-Turing thesis",
+           read: "E 7.1, FHP 22,24.4, HU 7.5-6, 8.3",
+            vwb: 25
+        },
+
+        { title: "Diagonalization and the halting problem  <a class='pubtag' href='https://www.youtube.com/watch?v=92WHN-pAFCs'>video</a> <a class='pubtag' href='http://www.lel.ed.ac.uk/~gpullum/loopsnoop.html'>Dr Seuss version</a>",
+           read: "E 8.1-8.7, FHP 25, HU 8.3",
+            vwb: 26
+        },
+
+        { title: "Undecidable problems",
+           read: "E 8.8, FHP 26-27,29.2",
+            vwb: 27
+        },
+
+        { title: "Undecidable problems, continued",
+           read: "E 8.8, FHP 26-27,29.2",
+            vwb: 28
+        },
+
+        { title: "Undecidable problems, continued",
+           read: "E 8.8, FHP 26-27,29.2",
+        },
+    ];
+
+    var holidays = {};
+    holidays[(new Date("2017/10/25")).toString()] = "<b>Midterm exam</b> in class";
+    //holidays[(new Date("2017/11/06")).toString()] = "Mike traveling: class topic TBA";
+    holidays[(new Date("2017/11/08")).toString()] = "<b>No class</b>";
+    holidays[(new Date("2017/11/10")).toString()] = "<b>No class:</b> Veterans Day holiday";
+    holidays[(new Date("2017/11/24")).toString()] = "<b>No class:</b> Thanksgiving holiday";
+
+    var start = new Date("2017/09/20");
+    var end   = new Date("2017/12/03");
+
+    var dowmap = { 1: "M", 3: "W", 5: "F" };
+    var monmap = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                  "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+    for (var d = start; d <= end ; d.setDate( d.getDate() + 1 )) {
+        if (dowmap[d.getDay()]) {
+            var title = "";
+            var vwb   = "";
+            var read  = "";
+            if (holidays[d.toString()]) {
+                title = "<span class='holiday'>" + holidays[d.toString()] + "</span>";
+            } else {
+                var l = lec.shift();
+                title = l.title;
+                if (l.read) {
+                    read  = l.read;
+                }
+                if (l.vwb) {
+                    if (l.vwb < 10) l.vwb = "0" + l.vwb;
+                    vwb = "<a href='lec/lec" + l.vwb + ".pdf' title='virtual whiteboard' class='pubtag'><i class='fa fa-desktop'></i></a>";
+                }
+            }
+
+            var thedate = monmap[d.getMonth()] + " " + d.getDate();
+            var thedow  = dowmap[d.getDay()];
+
+            var $day = $("<div class='schedline'>");
+            $day.append("<div class='scheddate'>" + thedate + "</div>");
+            $day.append("<div class='schedlink'>" + vwb + "</div>");
+            $day.append("<div class='scheditem'>" + title + "</div>");
+            $day.append("<div class='schedread'><span>" + read + "</span></div>");
+
+            $("#theschedule").append($day);
+        }
+    }
+
+
+</script>
+

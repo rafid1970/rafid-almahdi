@@ -1,0 +1,450 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr" class="js">
+
+<!-- Mirrored from web.engr.oregonstate.edu/~rosulekm/scbib/index.php?n=Paper.HL10 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 Apr 2018 19:52:06 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=ISO-8859-1" /><!-- /Added by HTTrack -->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+	<title>An Annotated Bibliography of Practical Secure Computation Paper/Efficient Secure Two-Party Protocols</title>
+	<link rel='stylesheet' href='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/skins/osu_coe/css/style.css' type='text/css' />
+	<link rel='stylesheet' href='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/skins/osu_coe/css/color.css' type='text/css' />
+	<link type='text/css' rel='stylesheet' media='all' href='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/skins/osu_coe/css/reset-fonts-grids.css'> 
+	<link type='text/css' rel='stylesheet' media='all' href='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/skins/osu_coe/css/osu-base.css'> 
+	<link type='text/css' rel='stylesheet' media='all' href='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/skins/osu_coe/css/main.css'> 
+	<link type='text/css' rel='stylesheet' media='all' href='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/skins/osu_coe/css/defaults.css'> 
+	<link type='text/css' rel='stylesheet' media='all' href='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/skins/osu_coe/css/osu_drupal_1_11.css'> 
+	<link type='text/css' rel='stylesheet' media='all' href='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/skins/osu_coe/css/osu_confident.css'>  
+	<link type='text/css' rel='stylesheet' media='print' href='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/skins/osu_coe/css/print.css'> 
+ 
+	<!--HTMLHeader--><style type='text/css'><!--
+span.anchor {
+	float: left;
+	font-size: 60%;
+	margin-left: -1em;
+	width: 1em;
+    position:relative; top:-0.1em;
+	text-align: center;
+}
+span.anchor a { text-decoration: none; }
+span.anchor a:hover { text-decoration: underline; }
+ol.toc { text-indent:-25px; list-style: none; margin-bottom:5px; }
+ol ol.toc { margin-left:-24px; text-indent:-24px; }
+div.tocfloat { font-size: smaller; margin-bottom: 10px;
+    border-top: 1px dotted #555555; border-bottom: 1px dotted #555555;
+    padding-top: 5px; 
+    width: 38%; float: right; margin-left: 10px; clear: right;
+    margin-right:-21px; padding-right: 13px; padding-left: 13px;
+    background-color: #eeeeee; }
+div.toc { font-size: smaller; 
+    border: 1px dotted #cccccc;
+    background: #f7f7f7;
+    margin-bottom: 10px; }
+div.toc p { background-color: #f9f6d6;
+    padding: 5px;
+    border-bottom:  1px dotted #cccccc; }span.miniedit { cursor: pointer; color: transparent; font-size: smaller; position: absolute; padding:.1em .5em; filter:alpha(opacity=0); z-index:2; } 
+  span.miniedit:hover { color: black; background: #ddd; background: rgba(240, 240, 240, .5);filter:alpha(opacity=70);}.editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+#siteheader .sitetitle a{height:49px; background: url(../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/skins/pmwiki/pmwiki-32.gif) left top no-repeat} #siteheader .sitetitle a, #siteheader .sitetag{padding-left: 350px} #siteheader .sitetag{margin-top: -21px}
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none;}
+
+--></style><script type="text/javascript">
+function toggle(obj, hide, show) {
+    var elstyle = document.getElementById(obj).style;
+    var text    = document.getElementById(obj + "tog");
+    if(!hide) { var hide = "hide"; }
+    if(!show) { var show = "show"; }
+    if (elstyle.display == 'none') {
+        elstyle.display = 'block';
+        text.innerHTML  = hide;
+    } else {
+        elstyle.display = 'none';
+        text.innerHTML  = show;
+    }
+}
+</script>
+	<link href='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/commentboxplus/commentboxplus.css' rel='stylesheet' type='text/css' />
+  <link rel='stylesheet' href='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/wsplus/wsplus.css' 
+    type='text/css' />
+  <!--[if IE]><style type='text/css' media='screen'>
+    body { behavior:url('https://secure.engr.oregonstate.edu/wiki/pmwiki/pub/wsplus/csshover.htc'); }
+    .rollover * { visibility: visible; }
+  </style><![endif]-->
+
+<script type='text/javascript' src='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/codemirror-5.15.2/lib/codemirror.js'></script>
+<link rel='stylesheet' type='text/css' href='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/codemirror-5.15.2/lib/codemirror.css' />
+
+<script type='text/javascript' src='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/cm/pmwiki.js'></script>
+<link rel='stylesheet' type='text/css' href='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/cm/pmwiki.css' />
+<style type='text/css'><!--
+
+.cmblocktext.cm-pmwiki-markup {
+  padding: 0;
+  border: none;
+}
+.cmblocktext.cm-pmwiki-markup pre {
+  color: black;
+  background-color: #fafafa;
+  padding: 0.5em;
+}
+
+--></style>
+<script type="text/javascript" src="pub/MathJax/MathJax.js">MathJax.Hub.Config({
+    extensions: ["tex2jax.js","TeX/AMSmath.html","TeX/AMSsymbols.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: { inlineMath: [ ['{\$','\$}'] ], displayMath: [ ['{\$\$','\$\$}'] ] } });</script>  <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/css/farm.css' />
+<link rel='stylesheet' type='text/css' href='pub/css/local.css' />
+
+</head>
+<body>
+
+<!--[if IE 6]>
+<div id="ie6" class="iefix">
+<![endif]-->
+<!--[if IE 7]>
+<div id="ie7" class="iefix">
+<![endif]-->
+<!-- START DRUPAL NAV LINK -->
+<a name="top" id="navigation-top"></a> 
+<div id="skip-to-nav">
+	<a href="#navigation"> Skip to Navigation </a> 
+</div>
+
+<!-- END DRUPAL NAV LINK -->
+<!--  BEGIN OSU TOP HAT -->
+<div id="osu-top-hat" style="border-bottom-color: #dbd6d0;">
+	<div id="osu-top-hat-interior" class="wrapper4">
+		<a href="http://oregonstate.edu/" title="Oregon State University"><img src='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/skins/osu_coe/css/osu-tag.gif' alt="Oregon State University" class="tag"></a> 
+		<div class="wikicmds utility">
+
+<!--PageActionFmt-->
+<ul><li class='browse'>      <a accesskey=''  rel='nofollow'  class='selflink' href='indexac3a.html?n=Paper.HL10'>View</a>
+</li><li class='edit'>      <a accesskey='e'  rel='nofollow'  class='wikilink' href='index7787.html?n=Paper.HL10?action=edit'>Edit</a>
+</li><li class='diff'>   <a accesskey='h'  rel='nofollow'  class='wikilink' href='index6d37.html?n=Paper.HL10?action=diff'>History</a>
+</li><li class='print'>     <a accesskey=''  rel='nofollow'  class='wikilink' href='index363f.html?n=Paper.HL10?action=print'>Print</a>
+</li></ul>
+
+<!--/PageActionFmt-->
+		</div>
+	</div>
+</div>
+<!--  END OSU TOP HAT -->
+<div id="top-bg" style="background-color:#D1D3D3;">
+<!-- START YUI GRID DOCUMENT TYPE DEFINITION - checks for left content, if there is, adds the defnition for YUI document class t2 -->
+	<div id="doc4">
+<!-- END YUI GRID DOCUMENT TYPE DEFINITION -->
+		<div id="page">
+			<div id="page-inner">
+				<div id="hd" role="banner" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; ">
+<!-- START DRUPAL HEADER -->
+					<div id="header">
+						<div id="header-inner" class="clear-block">
+							<div id="title">
+							<div id="department-name">
+        										<a href="http://engineering.oregonstate.edu/">College of Engineering</a>
+        									</div>
+								<h1 id="site-name">
+<!--PageTitleGroupFmt-->
+									<a href='index-2.html'>An Annotated Bibliography of Practical Secure Computation</a> 
+<!--/PageTitleGroupFmt-->
+								</h1>
+							</div>
+						</div>
+<!-- /#header-inner -->
+					</div>
+<!-- /#header -->
+<!-- END DRUPAL HEADER -->
+				</div>
+<!-- /hd -->
+				<div id="bd" role="main">
+<!-- START DRUPAL TOP HORIZONTAL BAR -->
+<!-- END DRUPAL TOP HORIZONTAL BAR -->
+					<div id="yui-main">
+						<div class="yui-b">
+<!-- START CHECK FOR RIGHT COL - if there is right content, open a grid holder and unit for main content -->
+<!--  END CHECK FOR RIGHT COL -->
+							<div class="interior">
+<!-- START DRUPAL MAIN -->
+								
+									<div id="main-inner" class="clear-block with-navbar">
+									<br />
+										<div id="content">
+											<div id="content-inner">
+												<div id="content-header">
+													<h2 class="title">
+<!--PageTitleFmt-->
+														<a href='indexac3a.html?n=Paper.HL10'>Efficient Secure Two-Party Protocols</a> 
+<!--/PageTitleFmt-->
+													</h2>
+												</div>
+<!-- /#content-header -->
+												<div id="content-area" class="region region-content">
+													<div id="bcontainer">
+														<div id="content">
+															<div id="main">
+															<!--PageText-->
+<div id='wikitext'>
+<h2>Efficient Secure Two-Party Protocols</h2>
+<p><span style='font-size:120%'><em>Carmit Hazay, Yehuda Lindell</em></span>
+<br />Monograph, Springer Information Security and Cryptography Series 2010  [<a class='urllink' href='http://dblp.uni-trier.de/rec/bibtex/series/isc/HazayL10' rel='nofollow'>bibtex</a>]
+</p>
+<div class='vspace'></div><hr />
+<div class='vspace'></div><h3>Table of Contents:</h3>
+<p><strong>Part I:</strong> Introduction and Definitions
+</p><ul><li>Introduction 
+<ul><li>The GMW Protocol for Secure Computation 
+</li><li>A Roadmap to the Book 
+</li></ul></li><li>Definitions 
+<ul><li>Preliminaries
+</li><li>Security in the Presence of Semi-honest Adversaries 
+</li><li>Security in the Presence of Malicious Adversaries 
+<ul><li>The Definition 
+</li><li>Extension to Reactive Functionalities 
+</li><li>Malicious Versus Semi-honest Adversaries 
+</li></ul></li><li>Security in the Presence of Covert Adversaries 
+<ul><li>Motivation 
+</li><li>The Actual Definition 
+</li><li>Cheating and Aborting 
+</li><li>Relations Between Security Models 
+</li></ul></li><li>Restricted Versus General Functionalities 
+<ul><li>Deterministic Functionalities 
+</li><li>Single-Output Functionalities 
+</li><li>Non-reactive Functionalities 
+</li></ul></li><li>Non-simulation-Based Definitions 
+<ul><li>Privacy Only 
+</li><li>One-Sided Simulatability 
+</li></ul></li><li>Sequential Composition -- Simulation-Based Definitions
+</li></ul></li></ul><p class='vspace'><strong>Part II:</strong> General Constructions
+</p><ul><li>Semi-honest Adversaries 
+<ul><li>An Overview of the Protocol 
+</li><li>Tools 
+<ul><li>"Special" Private-Key Encryption 
+</li><li>Oblivious Transfer 
+</li></ul></li><li>The Garbled-Circuit Construction 
+</li><li>Efficiency of the Protocol 
+</li></ul></li><li>Malicious Adversaries 
+<ul><li>An Overview of the Protocol 
+<ul><li>High-Level Protocol Description 
+</li><li>Checks for Correctness and Consistency 
+</li></ul></li><li>The Protocol 
+</li><li>Proof of Security 
+<ul><li>Security Against a Malicious {$P_1$}
+</li><li>Security Against a Malicious {$P_2$}
+</li></ul></li><li>Efficient Implementation of the Different Primitives 
+</li><li>Efficiency of the Protocol 
+</li><li>Suggestions for Further Reading 
+</li></ul></li><li>Covert Adversaries 
+<ul><li>Oblivious Transfer 
+<ul><li>The Basic Protocol 
+</li><li>Extensions 
+</li></ul></li><li>Secure Two-Party Computation 
+<ul><li>Overview of the Protocol 
+</li><li>The Protocol for Two-Party Computation 
+</li><li>Non-halting Detection Accuracy 
+</li></ul></li><li>Efficiency of the Protocol 
+</li></ul></li></ul><p class='vspace'><strong>Part III:</strong> Specific Constructions
+</p><ul><li>Sigma Protocols and Efficient Zero-Knowledge
+<ul><li>An Example 
+</li><li>Definitions and Properties 
+</li><li>Proofs of Knowledge 
+</li><li>Proving Compound Statements
+</li><li>Zero-Knowledge from {$\Sigma$}-Protocols 
+<ul><li>The Basic Zero-Knowledge Construction 
+</li><li>Zero-Knowledge Proofs of Knowledge 
+</li><li>The ZKPOK Ideal Functionality 
+</li></ul></li><li>Efficient Commitment Schemes from {$\Sigma$}-Protocols 
+</li><li>Summary 
+</li></ul></li><li>Oblivious Transfer and Applications 
+<ul><li>Notational Conventions for Protocols 
+<ul><li>A Protocol Based on the DDH Assumption 
+</li><li>A Protocol from Homomorphic Encryption 
+</li></ul></li><li>Oblivious Transfer -- One-sided Simulation
+</li><li>Oblivious Transfer -- Full Simulation
+<ul><li>1-out-of-2 Oblivious Transfer
+</li><li>Batch Oblivious Transfer 
+</li></ul></li><li>Another Oblivious Transfer -- Full Simulation
+</li><li>Secure Pseudorandom Function Evaluation 
+<ul><li>Pseudorandom Function -- Privacy Only
+</li><li>Pseudorandom Function -- Full Simulation
+</li><li>Covert and One-Sided Simulation 
+</li><li>Batch Pseudorandom Function Evaluation 
+</li></ul></li></ul></li><li>The kth-Ranked Element 
+<ul><li>Background 
+<ul><li>A Protocol for Finding the Median 
+</li><li>Reducing the kth-Ranked Element to the Median 
+</li></ul></li><li>Computing the Median -- Semi-honest
+</li><li>Computing the Median -- Malicious
+<ul><li>The Reactive Greater-Than Functionality 
+</li><li>The Protocol 
+</li></ul></li></ul></li><li>Search Problems 
+<ul><li>Background 
+</li><li>Secure Database Search 
+<ul><li>Securely Realizing Basic Database Search 
+</li><li>Securely Realizing Full Database Search 
+</li><li>Covert and One-Sided Simulation 
+</li></ul></li><li>Secure Document Search 
+</li><li>Implementing Functionality {$\mathcal F_{CPRP}$} with Smartcards 
+<ul><li>Standard Smartcard Functionality and Security 
+</li><li>Implementing {$\mathcal F_{CPRP}$} with Smartcards 
+</li></ul></li><li>Secure Text Search (Pattern Matching)
+<ul><li>Indexed Implementation for Naor-Reingold 
+</li><li>The Protocol for Secure Text Search 
+</li></ul></li></ul></li></ul><div class='vspace'></div><h3>More information, taken from Preface:</h3>
+<p><strong>Prerequisite knowledge.</strong> We assume that the reader is familiar with the basics of theoretical cryptography. Thus, for example, we assume that readers know what commitment schemes and zero-knowledge proofs are, and that they are comfortable with notions like pseudorandomness and computational indistinguishability. In contrast, all the relevant definitions of secure two-party computation are presented here from scratch. Thus, this book can also be used as a first introduction to secure computation.
+</p>
+<div class='vspace'></div><h3>Other</h3>
+<p><a class='urllink' href='http://u.cs.biu.ac.il/~lindell/efficient-protocols.html' rel='nofollow'>Comments &amp; Errata</a> from authors
+</p>
+<p class='vspace'><a class='urllink' href='http://u.cs.biu.ac.il/~lindell/HLreview.pdf' rel='nofollow'>review by Jonathan Katz</a>
+</p>
+<div class='vspace'></div><h3>Categories:</h3>
+<p><a class='wikilink' href='index4a54.html?n=PaperCategory.Reference'>Reference</a>
+</p>
+</div>
+
+															</div>
+															<div id="right">
+															<!--PageSearchFmt--><!--/PageSearchFmt-->
+																<div id="links">
+																<!--PageRightFmt-->
+																<ul><li><a class='wikilink' href='indexf462.html?n=Main.HomePage'>Home page</a>
+</li><li>All papers, by:
+<ul><li>.. <a class='wikilink' href='index4c80.html?n=Main.AllPapersByCategory'>category</a>
+</li><li>.. <a class='wikilink' href='index4ab1.html?n=Main.AllPapers'>author names</a>
+</li><li>.. <a class='wikilink' href='index8eb5.html?n=Main.AllPapersByDate'>publication date</a>
+</li><li>.. <a class='wikilink' href='index7c1d.html?n=Main.AllPapersByLastAdded'>recently added</a>
+</li><li>.. <a class='wikilink' href='index04f6.html?n=Main.AllPapersByLastUpdate'>recently updated</a>
+</li></ul></li><li><a class='wikilink' href='index3b29.html?n=Glossary.Index'>Glossary</a>
+</li><li><a class='wikilink' href='index85c1.html?n=Main.About'>About</a>
+</li><li>Just <a class='wikilink' href='indexf333.html?n=Main.GettingStarted'>getting started</a> in MPC?
+</li><li><a class='wikilink' href='index6457.html?n=Main.Guidelines'>Guidelines</a>
+</li><li><a class='wikilink' href='indexe90d.html?n=Main.TodoList'>Todo List</a>
+</li></ul><p class='vspace sidehead'> Search Papers
+</p><ul><li><form  class='wikisearch' action='https://web.engr.oregonstate.edu/~rosulekm/scbib/index.php?n=Paper.HL10' method='get'><input type='hidden' name='n' value='Paper.HL10' /><input type='hidden' name='group' value='Paper' /><input type='hidden' name='fmt' value='#papers' /><input type='hidden' name='order' value='SideBar' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value=''   class='inputbox searchbox' size='15' /><input type='submit' 
+    class='inputbutton searchbutton' value='go' /></form>
+</li></ul><p class='vspace sidehead'> Bibliography Categories
+</p><div class='fpltemplate'><ul><li><a class='wikilink' href='indexbef5.html?n=PaperCategory.Circuit'>Circuit constructions &amp; optimizations</a>
+</li><li><a class='wikilink' href='index59da.html?n=PaperCategory.CutAndChoose'>Cut-and-choose mechanisms</a>
+</li><li><a class='wikilink' href='index7d9b.html?n=PaperCategory.Garbling'>Garbling methods</a>
+</li><li><a class='wikilink' href='index33db.html?n=PaperCategory.Implementations'>Implementations</a>
+</li><li><a class='wikilink' href='indexfbef.html?n=PaperCategory.OTExtension'>Oblivious transfer extension</a>
+</li><li><a class='wikilink' href='index9dcc.html?n=PaperCategory.Paradigms'>Protocol paradigms</a>
+</li><li><a class='wikilink' href='index4a54.html?n=PaperCategory.Reference'>Reference works</a>
+</li><li><a class='wikilink' href='index0527.html?n=PaperCategory.SecurityModels'>Security models</a>
+</li><li><a class='wikilink' href='indexb67d.html?n=PaperCategory.SpecialPurpose'>Special-purpose protocols</a>
+</li></ul>
+</div>
+<div class='vspace'></div>
+
+																<!--/PageRightFmt-->
+																</div>
+															</div>
+														</div>
+														<div id="footer_container">
+															<div id="footer">
+
+															</div>
+														</div>
+														<div id="credits">
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+<!-- /#content-inner -->
+										</div>
+<!-- /#content -->
+									</div>
+<!-- /#main-inner -->
+								
+<!-- /#main -->
+<!-- END DRUPAL MAIN -->
+							</div>
+<!-- interior -->
+<!-- START CHECK FOR RIGHT COL - if there is a content, end the main content's grid unit, open the right content's grid unit -->
+<!-- END CHECK FOR RIGHT COL - grid unit and holder closed -->
+						</div>
+<!-- /yui-b -->
+					</div>
+<!-- /yui-main -->
+<!-- START CHECK FOR LEFT COL -->
+<!--  END CHECK FOR LEFT COL -->
+				</div>
+<!-- /#bd -->
+			</div>
+<!-- /#page-inner -->
+		</div>
+<!-- /#page -->
+	</div>
+<!-- /doc -->
+</div>
+<!-- top-bg -->
+<div id="ft" role="contentinfo" class="yui-t2">
+	<div id="ft-inner">
+<!-- START CONTACT -->
+		<div class="yui-b">
+			<div class="interior">
+				<div id="contact">
+					<div id="contact-inner" class="region region-contact">
+<!--  START DEFAULT OSU FOOTER TEXT -->
+						<p class="osu-footer-text content">
+							<a href="http://oregonstate.edu/copyright">Copyright</a> &copy;2018<br> Oregon State University<br> <a href="http://oregonstate.edu/disclaimer">Disclaimer</a> 
+						</p>
+
+<!--  END START DEFAULT OSU FOOTER TEXT -->
+					</div>
+<!-- /#contact-inner -->
+				</div>
+<!-- /#contact -->
+			</div>
+<!-- /interior -->
+		</div>
+<!-- END CONTACT -->
+		<div class="yui-b first">
+			<div class="interior">
+<!-- START FOOTER -->
+															<div class="osu-footer-text content">
+															<!--PageFooterFmt-->
+															<p><small>Page last modified on June 20, 2014, at 11:13 AM</small>
+</p>
+
+															
+															<!--/PageFooterFmt-->
+															</div>
+
+			</div>
+<!-- /interior -->
+		</div>
+<!-- END FOOTER -->
+	</div>
+<!-- /ft-inner -->
+</div>
+<!-- /ft -->
+<!--[if IE 6]>
+</div>
+<![endif]-->
+<!--[if IE 7]>
+</div>
+<![endif]-->
+<!--HTMLFooter--><script type="text/javascript"
+    src="../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/autoplay.js"></script>
+</body>
+
+<!-- Mirrored from web.engr.oregonstate.edu/~rosulekm/scbib/index.php?n=Paper.HL10 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 Apr 2018 19:52:07 GMT -->
+</html>

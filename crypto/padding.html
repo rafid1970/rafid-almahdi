@@ -1,0 +1,406 @@
+<html>
+  
+<!-- Mirrored from web.engr.oregonstate.edu/~rosulekm/crypto/padding.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 Apr 2018 19:51:42 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>Padding Oracle Attack: Interactive Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif|Vollkorn' rel='stylesheet' type='text/css'>
+    <script src="../../../use.fontawesome.com/9274001210.js"></script>
+    <link rel="stylesheet" type="text/css" href="../home.css"/>
+    <script src="../www/jquery.min.js"></script>
+    <script src="jquery.connections.js"></script>
+    <script src="../home.js"></script>
+
+    <style type="text/css">
+        #demo {
+            font-size: 120%;
+        }
+        div.block {
+            border: 1px solid #888;
+            background: #eee;
+            display: inline-block;
+            font-family: courier;
+        }
+        div.nibble {
+            display: inline-block;
+            padding: 0 3px;
+        }
+        .flipped {
+            transform: rotateY(360deg);
+        }
+        .mauled {
+            font-weight: bold;
+            color: red;
+        }
+        .bit {
+            cursor: default;
+            display: inline-block;
+            transform-style: preserve-3d;
+            transition: 0.4s;
+        }
+        .malleable .bit {
+            cursor: pointer;
+        }
+
+        .nibble.happy {
+            font-weight: bold;
+            color: green;
+        }
+
+        th {
+            text-align: right;
+        }
+
+        .prp {
+            background: white;
+            display: inline-block;
+            margin: 20px auto;
+            padding: 10px;
+            font-size: 150%;
+            border: 1px solid black;
+            font-family: "droid sans";
+        }
+
+        .xor {
+            font-size: 150%;
+            margin-bottom: 20px;
+        }
+
+        .decrypt {
+            text-align: center;
+            overflow: hidden;
+            max-height: 200px;
+            height: auto;
+            transition: max-height 0.25s ease-out;
+        }
+        .decrypt.hide {
+            max-height: 0px;
+        }
+        .decrypt.hide connection {
+            border-color: rgba(0,0,0,0);
+            transition-duration: 0s;
+        }
+
+        table.demo {
+            margin: 24px auto;
+        }
+
+        .oracleyes {
+            font-weight: bold;
+            color: green;
+        }
+        .prp sup {
+            font-size: 60%;
+        }
+        connection {
+            border-radius: 10px;
+            border: 3px solid #888;
+            transition: border-color 0.25s ease-out;
+        }
+    </style>
+
+  </head>
+  <body>
+    <div class="topfold">
+      <img src="shell.png" style="width:300px">
+    </div>
+    <div class="header">Padding Oracle Attack</div>
+    <div class="botfold"> 
+      <ul class="contact fa-ul">
+        <li> <i class="fa fa-li fa-book"></i><span><a href="index.html"><i>Joy of Cryptography</i></a></span></li>
+        <li> <i class="fa fa-li fa-user"></i><span>Mike Rosulek, Oregon State University</span></li>
+      </ul>
+    </div>
+    <div class="nav">
+        <a href="#cbc" class="navlink">malleability</a>
+        <a href="#padding" class="navlink">padding</a>
+        <a href="#attack" class="navlink">attack</a>
+    </div>
+    <div class="content">
+
+      In this lesson module, you'll learn the mechanics of a padding oracle attack. Much more detail about the context of this attack is given in <a href="chap10.pdf">chapter 10</a> of the <a href="index.html">textbook</a>.
+
+      <h1>CBC Malleability<a name="cbc" class="anchor">&#8203;</a></h1>
+
+      Here's what CBC mode decryption looks like (with 16-bit blocks):
+
+        <table class="demo" id="malleability">
+            <tr><th>ciphertext = </th>
+                <td class="ctxt0"></td>
+                <td class="ctxt1"></td>
+            </tr>
+            <tr><th></th>
+                <td></td>
+                <td>
+                    <div class="decrypt">
+                        <div class="prp">F<sup>-1</sup></div>
+                        <div class="xor"><span>&oplus;</span></div>
+                        <div class="ptxt"></div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+      What happens when you flip some bits in the first ciphertext block? What is the effect on the resulting plaintext? <b>Try it!</b> (click on ciphertext bits to flip them)
+
+      <h1>Padding<a name="padding" class="anchor">&#8203;</a></h1>
+
+      <p>
+      Let's consider a padding scheme where correctly padded blocks <b>end in</b>
+        either
+        <center>
+            <div class="block"><div class="nibble">0001</div></div>
+        or
+            <div class="block"><div class="nibble">0000</div><div class="nibble">0010</div></div>
+        or
+            <div class="block"><div class="nibble">0000</div><div class="nibble">0000</div><div class="nibble">0011</div></div>
+        or
+            <div class="block"><div class="nibble">0000</div><div class="nibble">0000</div><div class="nibble">0000</div><div class="nibble">0100</div></div>
+        </center>
+      </p>
+
+      <p>See if you can flip some bits in this ciphertext so that it decrypts to something with valid padding. <b>Try it:</b></p>
+
+        <table class="demo" id="padding">
+            <tr><th>ciphertext = </th>
+                <td class="ctxt0"></td>
+                <td class="ctxt1"></td>
+            </tr>
+            <tr><th>valid padding?</th>
+                <td class="oracleresp">no</td>
+                <td>
+                    <div class="decrypt">
+                        <div class="prp">F<sup>-1</sup></div>
+                        <div class="xor"><span>&oplus;</span></div>
+                        <div class="ptxt"></div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <p>Look at the bits you had to flip to achieve valid padding (the red bits). What is the relationship between those bits and the bits of the <b>original plaintext</b>?</p>
+
+
+      <h1>Attack<a name="attack" class="anchor">&#8203;</a></h1>
+
+        <p>Now suppose the <b>only</b> information you can see is whether flipping certain ciphertext bits results in a plaintext with valid padding. Can you use this ability to decrypt the ciphertext? <b>Try it!</b></p>
+
+        <p>When your guess of the plaintext is correct, it will turn green. If you need to "cheat," you can look at the entire result of decryption.</p>
+
+        <table class="demo" id="attack">
+            <tr><th>ciphertext = </th>
+                <td class="ctxt0"></td>
+                <td class="ctxt1"></td>
+            </tr>
+
+            <tr id="resultrow"><th style="vertical-align: bottom">(<a href="#" class="showhide">show/hide decryption</a>)</th>
+                <td></td>
+                <td>
+                    <div class="decrypt">
+                        <div class="prp">F<sup>-1</sup></div>
+                        <div class="xor"><span>&oplus;</span></div>
+                        <div class="ptxt"></div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr><td style="height: 20px"></td></tr>
+
+            <tr><th>valid padding?</th>
+                <td class="oracleresp">no</td>
+                <td></td>
+            </tr>
+
+            <tr><td style="height: 20px"></td></tr>
+
+            <tr><th>your plaintext guess: </th>
+                <td></td>
+                <td class="guess"></td>
+            </tr>                
+
+        </table>
+
+        <p>Suggestions:</p>
+        <ul><li>Try to find a way to flip the last 4 bits that results in valid padding.</li>
+            <li>Now you know that the (modified) plaintext must end in <div class="block"><div class="nibble">0001</div></div>, so you should be able to figure out what the <i>original</i> plaintext was.</li>
+            <li>Flip more bits to try to get the (modified) plaintext to end in <div class="block"><div class="nibble">0000</div><div class="nibble">0010</div></div>.</li>
+            <li> etc etc</li>
+        </ul>
+
+
+    </div>
+  </body>
+
+<!-- Mirrored from web.engr.oregonstate.edu/~rosulekm/crypto/padding.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 Apr 2018 19:51:43 GMT -->
+</html>
+
+
+
+<script type="text/javascript">
+    function strzip(f, a, b) {
+        var res = "";
+        for (var i = 0 ; i < a.length; i++) res += f(a[i], b[i]);
+        return res;
+    }
+    function charxor(a,b) {
+        return "" + (parseInt(a) ^ parseInt(b));
+    }
+    function strxor(a,b) {
+        return strzip( charxor, a, b );
+    }
+
+
+    function newnibble(v) {
+        var $nib = $("<div>").addClass("nibble");
+
+        for (var i=0; i<4; i++) {
+            $nib.append(
+                $("<span>").addClass("bit").text( v[i] )
+            );
+        }
+        return $nib;
+    }
+    function newblock(v) {
+        var nibbles = v.match(/.{1,4}/g) || [];
+        var $block = $("<div>").addClass("block");
+
+        for (var i=0; i<nibbles.length; i++) {
+            $block.append( newnibble( nibbles[i] ) );
+        }
+        return $block;
+    }
+    function randbits(n) {
+        var res = "";
+        for (var i=0; i<n; i++) res += Math.floor( Math.random() * 2 );
+        return res;
+    }
+    function getbits($block) {
+        var res = "";
+        $block.find(".bit").map( function() { res += $(this).text(); } );
+        return res;
+    }
+
+    function flipbit($bit, highlight) {
+        $bit.toggleClass("flipped");
+        if (highlight) $bit.toggleClass("mauled");
+        $bit.text( 1 - $bit.text() );
+    }
+
+    function setupmalleable($block, highlight, callback) {
+        $block.find(".bit").on("click", function(e) {
+            flipbit( $(this), highlight );        
+            callback($block, $(this), getbits($block));
+        });
+    }
+
+    function setupdec($container, callback) {
+        var ctxt0 = randbits(16);
+        var ctxt1 = randbits(16);
+        var ptxt  = randbits(16);
+
+        $container.find(".ctxt0").append( newblock(ctxt0) );
+        $container.find(".ctxt1").append( newblock(ctxt1) );
+        $container.find(".ptxt") .append( newblock(ptxt) );
+        
+        $container.find(".ctxt0").addClass("malleable");
+
+        var connections = [ [".ctxt0", ".xor span"],
+                            [".ctxt1", ".prp"],
+                            [".prp",   ".xor span"],
+                            [".ptxt",  ".xor span"]   ];
+
+        for (var i=0; i<connections.length; i++) {
+            var from = connections[i][0];
+            var to   = connections[i][1];
+            $container.find(from).connections({
+                to: $container.find(to),
+                within: $container.find(".decrypt")
+            });
+        }
+
+
+        setupmalleable( $container.find(".ctxt0"), true, function($block, $bit, newctxt0) {
+            var bitindex = $bit.index();
+            var nibbleindex = $bit.parent().index();
+
+            var $tgt = $container.find(".ptxt .nibble:eq(" + nibbleindex + ") .bit:eq(" + bitindex + ")");
+            flipbit($tgt);
+
+            var res = strxor( strxor( ctxt0, newctxt0 ), ptxt );
+
+            if (callback) callback( $container.find(".ptxt"), res );
+        });
+
+        return ptxt;
+    }
+
+    function checkpadding($ptxt, ptxt) {
+        var valid = 0;
+
+        if (ptxt.match(/0001$/)) {
+            $ptxt.find(".nibble:gt(2)").addClass("happy");
+            valid = 1;
+        } else if (ptxt.match(/00000010$/)) {
+            $ptxt.find(".nibble:gt(1)").addClass("happy");
+            valid = 1;
+        } else if (ptxt.match(/000000000011$/)) {
+            $ptxt.find(".nibble:gt(0)").addClass("happy");
+            valid = 1;
+        } else if (ptxt.match(/0000000000000100$/)) {
+            $ptxt.find(".nibble").addClass("happy");
+            valid = 1;
+        } else {
+            $ptxt.find(".nibble").removeClass("happy");
+        }
+
+        return valid;
+    }
+
+
+    $(function(){ 
+
+        setupdec($("#malleability"));
+
+        setupdec($("#padding"), function($ptxt, ptxt) {
+            if (checkpadding($ptxt, ptxt)) {
+                $("#padding .oracleresp").addClass("oracleyes").text("YES");
+            } else {
+                $("#padding .oracleresp").removeClass("oracleyes").text("no");
+            }
+        });
+
+
+        var secretptxt = setupdec($("#attack"), function($ptxt, ptxt) {
+            if (checkpadding($ptxt, ptxt)) {
+                $("#attack .oracleresp").addClass("oracleyes").text("YES");
+            } else {
+                $("#attack .oracleresp").removeClass("oracleyes").text("no");
+            }
+        });
+
+        $("#attack .guess").append( newblock("0000000000000000") );
+        setupmalleable($("#attack .guess"), false, function($block, $bit, val) {
+            if (val == secretptxt) {
+                $block.find(".nibble").addClass("happy");
+            } else {
+                $block.find(".nibble").removeClass("happy");
+            }
+        });
+
+        $("#attack .showhide").on("click", function() {
+            $("#attack .decrypt").toggleClass("hide");
+            $("connection").connections('update');
+            return false;    
+        }).click();
+
+
+        $(window).on('resize', function() {
+            $("connection").connections('update');
+        });
+
+    });
+
+
+</script>
+

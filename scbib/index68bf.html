@@ -1,0 +1,409 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr" class="js">
+
+<!-- Mirrored from web.engr.oregonstate.edu/~rosulekm/scbib/index.php?n=Paper.KK13 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 Apr 2018 19:52:13 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=ISO-8859-1" /><!-- /Added by HTTrack -->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+	<title>An Annotated Bibliography of Practical Secure Computation Paper/Improved OT Extension for Transferring Short Secrets</title>
+	<link rel='stylesheet' href='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/skins/osu_coe/css/style.css' type='text/css' />
+	<link rel='stylesheet' href='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/skins/osu_coe/css/color.css' type='text/css' />
+	<link type='text/css' rel='stylesheet' media='all' href='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/skins/osu_coe/css/reset-fonts-grids.css'> 
+	<link type='text/css' rel='stylesheet' media='all' href='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/skins/osu_coe/css/osu-base.css'> 
+	<link type='text/css' rel='stylesheet' media='all' href='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/skins/osu_coe/css/main.css'> 
+	<link type='text/css' rel='stylesheet' media='all' href='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/skins/osu_coe/css/defaults.css'> 
+	<link type='text/css' rel='stylesheet' media='all' href='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/skins/osu_coe/css/osu_drupal_1_11.css'> 
+	<link type='text/css' rel='stylesheet' media='all' href='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/skins/osu_coe/css/osu_confident.css'>  
+	<link type='text/css' rel='stylesheet' media='print' href='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/skins/osu_coe/css/print.css'> 
+ 
+	<!--HTMLHeader--><style type='text/css'><!--
+span.anchor {
+	float: left;
+	font-size: 60%;
+	margin-left: -1em;
+	width: 1em;
+    position:relative; top:-0.1em;
+	text-align: center;
+}
+span.anchor a { text-decoration: none; }
+span.anchor a:hover { text-decoration: underline; }
+ol.toc { text-indent:-25px; list-style: none; margin-bottom:5px; }
+ol ol.toc { margin-left:-24px; text-indent:-24px; }
+div.tocfloat { font-size: smaller; margin-bottom: 10px;
+    border-top: 1px dotted #555555; border-bottom: 1px dotted #555555;
+    padding-top: 5px; 
+    width: 38%; float: right; margin-left: 10px; clear: right;
+    margin-right:-21px; padding-right: 13px; padding-left: 13px;
+    background-color: #eeeeee; }
+div.toc { font-size: smaller; 
+    border: 1px dotted #cccccc;
+    background: #f7f7f7;
+    margin-bottom: 10px; }
+div.toc p { background-color: #f9f6d6;
+    padding: 5px;
+    border-bottom:  1px dotted #cccccc; }span.miniedit { cursor: pointer; color: transparent; font-size: smaller; position: absolute; padding:.1em .5em; filter:alpha(opacity=0); z-index:2; } 
+  span.miniedit:hover { color: black; background: #ddd; background: rgba(240, 240, 240, .5);filter:alpha(opacity=70);}.editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+#siteheader .sitetitle a{height:49px; background: url(../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/skins/pmwiki/pmwiki-32.gif) left top no-repeat} #siteheader .sitetitle a, #siteheader .sitetag{padding-left: 350px} #siteheader .sitetag{margin-top: -21px}
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none;}
+
+--></style><script type="text/javascript">
+function toggle(obj, hide, show) {
+    var elstyle = document.getElementById(obj).style;
+    var text    = document.getElementById(obj + "tog");
+    if(!hide) { var hide = "hide"; }
+    if(!show) { var show = "show"; }
+    if (elstyle.display == 'none') {
+        elstyle.display = 'block';
+        text.innerHTML  = hide;
+    } else {
+        elstyle.display = 'none';
+        text.innerHTML  = show;
+    }
+}
+</script>
+	<link href='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/commentboxplus/commentboxplus.css' rel='stylesheet' type='text/css' />
+  <link rel='stylesheet' href='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/wsplus/wsplus.css' 
+    type='text/css' />
+  <!--[if IE]><style type='text/css' media='screen'>
+    body { behavior:url('https://secure.engr.oregonstate.edu/wiki/pmwiki/pub/wsplus/csshover.htc'); }
+    .rollover * { visibility: visible; }
+  </style><![endif]-->
+
+<script type='text/javascript' src='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/codemirror-5.15.2/lib/codemirror.js'></script>
+<link rel='stylesheet' type='text/css' href='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/codemirror-5.15.2/lib/codemirror.css' />
+
+<script type='text/javascript' src='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/cm/pmwiki.js'></script>
+<link rel='stylesheet' type='text/css' href='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/cm/pmwiki.css' />
+<style type='text/css'><!--
+
+.cmblocktext.cm-pmwiki-markup {
+  padding: 0;
+  border: none;
+}
+.cmblocktext.cm-pmwiki-markup pre {
+  color: black;
+  background-color: #fafafa;
+  padding: 0.5em;
+}
+
+--></style>
+<script type="text/javascript" src="pub/MathJax/MathJax.js">MathJax.Hub.Config({
+    extensions: ["tex2jax.js","TeX/AMSmath.html","TeX/AMSsymbols.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: { inlineMath: [ ['{\$','\$}'] ], displayMath: [ ['{\$\$','\$\$}'] ] } });</script>  <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/css/farm.css' />
+<link rel='stylesheet' type='text/css' href='pub/css/local.css' />
+
+</head>
+<body>
+
+<!--[if IE 6]>
+<div id="ie6" class="iefix">
+<![endif]-->
+<!--[if IE 7]>
+<div id="ie7" class="iefix">
+<![endif]-->
+<!-- START DRUPAL NAV LINK -->
+<a name="top" id="navigation-top"></a> 
+<div id="skip-to-nav">
+	<a href="#navigation"> Skip to Navigation </a> 
+</div>
+
+<!-- END DRUPAL NAV LINK -->
+<!--  BEGIN OSU TOP HAT -->
+<div id="osu-top-hat" style="border-bottom-color: #dbd6d0;">
+	<div id="osu-top-hat-interior" class="wrapper4">
+		<a href="http://oregonstate.edu/" title="Oregon State University"><img src='../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/skins/osu_coe/css/osu-tag.gif' alt="Oregon State University" class="tag"></a> 
+		<div class="wikicmds utility">
+
+<!--PageActionFmt-->
+<ul><li class='browse'>      <a accesskey=''  rel='nofollow'  class='selflink' href='index68bf.html?n=Paper.KK13'>View</a>
+</li><li class='edit'>      <a accesskey='e'  rel='nofollow'  class='wikilink' href='indexc7b1.html?n=Paper.KK13?action=edit'>Edit</a>
+</li><li class='diff'>   <a accesskey='h'  rel='nofollow'  class='wikilink' href='indexd35e.html?n=Paper.KK13?action=diff'>History</a>
+</li><li class='print'>     <a accesskey=''  rel='nofollow'  class='wikilink' href='index9082.html?n=Paper.KK13?action=print'>Print</a>
+</li></ul>
+
+<!--/PageActionFmt-->
+		</div>
+	</div>
+</div>
+<!--  END OSU TOP HAT -->
+<div id="top-bg" style="background-color:#D1D3D3;">
+<!-- START YUI GRID DOCUMENT TYPE DEFINITION - checks for left content, if there is, adds the defnition for YUI document class t2 -->
+	<div id="doc4">
+<!-- END YUI GRID DOCUMENT TYPE DEFINITION -->
+		<div id="page">
+			<div id="page-inner">
+				<div id="hd" role="banner" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; ">
+<!-- START DRUPAL HEADER -->
+					<div id="header">
+						<div id="header-inner" class="clear-block">
+							<div id="title">
+							<div id="department-name">
+        										<a href="http://engineering.oregonstate.edu/">College of Engineering</a>
+        									</div>
+								<h1 id="site-name">
+<!--PageTitleGroupFmt-->
+									<a href='index-2.html'>An Annotated Bibliography of Practical Secure Computation</a> 
+<!--/PageTitleGroupFmt-->
+								</h1>
+							</div>
+						</div>
+<!-- /#header-inner -->
+					</div>
+<!-- /#header -->
+<!-- END DRUPAL HEADER -->
+				</div>
+<!-- /hd -->
+				<div id="bd" role="main">
+<!-- START DRUPAL TOP HORIZONTAL BAR -->
+<!-- END DRUPAL TOP HORIZONTAL BAR -->
+					<div id="yui-main">
+						<div class="yui-b">
+<!-- START CHECK FOR RIGHT COL - if there is right content, open a grid holder and unit for main content -->
+<!--  END CHECK FOR RIGHT COL -->
+							<div class="interior">
+<!-- START DRUPAL MAIN -->
+								
+									<div id="main-inner" class="clear-block with-navbar">
+									<br />
+										<div id="content">
+											<div id="content-inner">
+												<div id="content-header">
+													<h2 class="title">
+<!--PageTitleFmt-->
+														<a href='index68bf.html?n=Paper.KK13'>Improved OT Extension for Transferring Short Secrets</a> 
+<!--/PageTitleFmt-->
+													</h2>
+												</div>
+<!-- /#content-header -->
+												<div id="content-area" class="region region-content">
+													<div id="bcontainer">
+														<div id="content">
+															<div id="main">
+															<!--PageText-->
+<div id='wikitext'>
+<h2>Improved OT Extension for Transferring Short Secrets</h2>
+<p><span style='font-size:120%'><em>Vladimir Kolesnikov, Ranjit Kumaresan</em></span>
+<br />CRYPTO 2013 [<a class='urllink' href='http://eprint.iacr.org/2013/491.pdf' rel='nofollow'>pdf</a>] [<a class='urllink' href='http://dblp.uni-trier.de/rec/bibtex/conf/crypto/KolesnikovK13' rel='nofollow'>bibtex</a>]
+</p>
+<div class='vspace'></div><hr />
+<div class='vspace'></div><h3>Prerequisite:</h3>
+<p>This summary expects the reader to have a basic understanding of the <a class='wikilink' href='indexea27.html?n=Paper.IKNP03'>IKNP03</a> protocol.
+</p>
+<div class='vspace'></div><h1>Introduction</h1>
+<p>KK describe an generalization and optimization to <a class='wikilink' href='indexea27.html?n=Paper.IKNP03'>IKNP03</a> protocol for {$OT$} extension in the  semi-honest setting. The protocol provides a {$O(\log k)$} performance improvement over the IKNP 1-out-of-2 {$OT$} protocol and generalizes it to a 1-out-of-{$n$} {$OT$} with the same asymptotic improvement over the state of the art 1-out-of-{$n$} {$OT$}. The protocol is also applicable in the multi-party setting unlike the original IKNP version. In concrete terms, this yields a 2-3 factor performance improvement for the 1-out-of-2 {$OT$} protocol.
+</p>
+<p class='vspace'>The main observation made by KK is that in the IKNP protocol, the {$Receiver$}'s selection vector {$r$} is reused on each of the {$k$} initial {$OT$}s. This can be seen below on the left.
+</p>
+<div class='vspace'></div><div  style='text-align: center;' class='img imgonly'> <img src='uploads/Paper/OT_3.png' alt='' title='' /></div>
+<p class='vspace'>On each one of the (red/green) Column pairs, a 1-out-of-2 {$OT$} is performed in the IKNP protocol. If you take the transpose of these columns, each red row encoding is {$t_j\oplus \{1\}^k$} or {$t_j\oplus \{0\}^k$} based upon the bit {$r_j$}. Inspired by the observation that these repetitious codes ({$\{1\}^k$} and {$\{0\}^k$}) dictate the receivers selection, what if the codes were vectors of {$\{0,1\}^k$}. Would this enable to protocol to generalize to a 1-out-of-{$n$} {$OT$}?
+</p>
+<p class='vspace'>To accommodate a 1-out-of-{$n$} {$OT$} protocol, the IKNP {$Receiver$} selection vector {$r\in \{0,1\}^m$} will need to be expanded to {$r\in \{0,1,...,n-1\}^m$} to denote the {$Receiver$}'s 1-out-of-{$n$} selection on all {$m$} {$OT$}s. 
+</p>
+<p class='vspace'>To securely achieve this result, the new {$\{0,1\}^k$} vector codes will need to have a relative distance of {$\frac{1}{2}$} between each other. That is, each code must be different enough from the others to maintain the security. The Walsh-Hadamard codes have this exact property. We will denote the Walsh-Hadamard encoding of {$r_j$} as {$c(r_j)$}. 
+</p>
+<div class='vspace'></div><h1>1-out-of-n Protocol</h1>
+<p>Let the {$Receiver$} generate <span  style='color: green;'>{$T_0$}</span> as a {$m \times k$} random bit matrix, shown below as the green vectors. Let <span  style='color: red;'>{$T_1$}</span> be the matrix whose {$j^{th}$} row is the {$j^{th}$} row of <span  style='color: green;'>{$T_0$}</span> XOR {$c(r_j)$}, as seen below by the red vectors. Note: {$k$} is the security parameter.
+</p>
+<div class='vspace'></div><div  style='text-align: center;' class='img imgonly'> <img src='uploads/Paper/OT_4.png' alt='' title='' /></div>
+<p class='vspace'>where <span  style='color: green;'>{$t_{j,0}$}</span> is the {$j^{th}$} row of <span  style='color: green;'>{$T_0$}</span>, and {$t_x^i$} is the  {$i^{th}$} column of {$T_x$}
+</p>
+<p class='vspace'>The protocol now performs {$k$} 1-out-of-2 {$OT$}s on the {$k$} columns of the two matrices <span  style='color: green;'>{$T_0$}</span> and <span  style='color: red;'>{$T_1$}</span>, where the {$Receiver$} acts as the sender. Note: these {$OT$}s are the same as the IKNP protocol except that the rows of <span  style='color: red;'>{$T_1$}</span> are <span  style='color: green;'>{$t_{j,0}$}</span>{$\oplus c(r_j)$} instead of <span  style='color: green;'>{$t_{j,0}$}</span>{$\oplus \{r_j\}^k$}.
+</p>
+<p class='vspace'>As before in IKNP, the {$Sender$} will randomly select between these two (red/green) columns for each of the {$k$} pairs. Let {$s\in \{0,1\}^k$} be the vector denoting this random selection and let {$Q$} be the matrix denoting the collection of these {$k$} {$OT$}s when they are stored column wise. That is {$q^i=t^i_{s_i}$}
+</p>
+<div class='vspace'></div><div  style='text-align: center;' class='img imgonly'> <img src='uploads/Paper/OT_5.png' alt='' title='' /></div>
+<p class='vspace'>As shown in blue, each row of {$Q$} (denoted as {$q_i$}) will be the corresponding row in <span  style='color: green;'>{$T_0$}</span> XORed with the Walsh-Hadamard code for {$r_i$} bitwise ANDed with {$s$}. The main take away here is that each row of {$Q$} has 1-out-of-{$n$} possible values if you fix <span  style='color: green;'>{$T_0$}</span> and {$s$}. In particular, this 1-out-of-{$n$} decision is made by the {$Receiver$} and is unknown to the {$Sender$}. 
+</p>
+<p class='vspace'>The initialization phase has now completed and the real 1-out-of-{$n$} {$OT$}s can now be performed. 
+</p>
+<p class='vspace'>The {$Sender$} will send the {$Receiver$} an one time pad encryption of each of the {$n$} messages for each of the 1-out-of-{$n$} {$OT$}s. The {$i^{th}$} messages in this {$OT$} will be encrypted with the hash, {$H(j,q_j\oplus ( c(i)\odot s ))$} as a one time pad mask. Based upon the {$receiver$}'s choice of {$r_j$}, exactly one of these messages will be equivalent to {$H(j,$}<span  style='color: green;'>{$t_{j,0}$}</span>{$)$}. That is {$q_j\equiv $}<span  style='color: green;'>{$t_{j,0}$}</span>{$\oplus (c(r_j)\odot s)$} will cancel with {$( c(i)\odot s )$} leaving <span  style='color: green;'>{$t_{j,0}$}</span> when {$i=r_j$}. 
+</p>
+<p class='vspace'>Put algorithmically,
+<br />For each {$j$} in the {$m$} {$OT$}s:
+</p><div class='indent'>For each  {$i$} in the {$n$} messages of the {$j^{th}$} {$OT$}:
+<div class='indent'>The {$Sender$} sends the {$Receiver$}: {$y_{j,i}=M_{j,i}\oplus H(j,q_j\oplus ( c(i)\odot s ))$}
+</div></div><p class='vspace'>Where {$M_{j,i}$} is the {$i^{th}$} message  of the {$j^{th}$} {$OT$}.
+</p>
+<p class='vspace'>The {$Receiver$} will then decrypt the {$y_{j,r_j}$} message by re-XORing {$y_{j,r_j}$} with {$H(j,$}<span  style='color: green;'>{$t_{j,0}$}</span>{$)$}. This results in {$M_{j,r_j}$}, which is precisely the {$Receiver$}'s desired message on the {$j^{th}$} {$OT$}. All of the other message encryptions of the {$j^{th}$} {$OT$} will remain pseudo random because the {$Receiver$} does not know the random bit vector {$s$} that the {$Sender$} picked.
+</p>
+<p class='vspace'>In sum, {$m$} instances of a 1-out-of-{$n$} {$OT$} can be obtained by {$k$} instances of a 1-out-of-2 {$OT$} plus at most {$mn$} calls to a random oracle by both parties. Since {$k$} is the security parameter this can yeild a significant improvement when {$m$} becomes large.
+</p>
+<div class='vspace'></div><h1>1-out-of-2 Optimization</h1>
+<p>Let {$n\choose 1$}-{$OT_{l}^{m}$} denote {$m$} instances of a 1-out-of-{$n$} {$OT$} each of length {$l$}.
+</p>
+<p class='vspace'>From an observation not shown here, {$\log n$} instances of a {$2\choose 1$}-{$OT$} can be obtained from a single instance of {$n\choose 1$}-{$OT$} of slightly longer message length. Put precisely, a {$2\choose1$}-{$OT_{l}^m$} has the same exact cost as a {$n\choose 1$}-{$OT_{l\log n}^{m/\log n}$}. This hints that the generalization KK describe can also be used to further optimize the 1-out-of-2 variant.
+</p>
+<p class='vspace'>With the use of this observation, {$m$} instances of a 1-out-of-2 {$OT$} can be obtained with the additional asymptotic cost of {$O(mk/\log(k/l))$}, where {$k$} is the security parameter. This contrasts with the IKNP cost of {$O(m(k+l))$}. In the important case when {$l=1$}, we obtain a logarithmic improvement over IKNP.
+</p>
+<div class='vspace'></div><h2>Random Oracle</h2>
+<p>Similar to the IKNP protocol, a {$Code$}-{$Correlation$} {$Robust$} random oracle is required to ensure a semi-honest {$Receiver$} cannot learn {$s$} and therefore all of {$M$}. {$Code$}-{$Correlation$} {$Robustness$} is a property of a random oracle ensuring that no information about the input is leaked when the input are known values XORed/ANDed with an unknown value. Even if polynomial many queries with different know values are made. Specifically, the joint distribution of 
+</p>
+<p class='vspace'  style='text-align: center;'> {$\{t_1,t_2,...,t_n\}$} , {$\{c_1,c_2,...,c_n\}$}   and  {$H(t_j\oplus (c_{j'}\odot s)),H(t_l\oplus (c_{l'}\odot s)),...,H(t_n\oplus (c_{n'}\odot s)) $}
+</p>
+<p class='vspace'>must be pseudo random, where {$s$} is unknown and {$H$} is queried a polynomial number of times with respect to the security parameter.  This is a requirement because the {$Receiver$} knows all of these {$t_i$} and {$c_i$} values. i.e. <span  style='color: green;'>{$t_{i,0}$}</span> and  {$c(r_i)$}. If the correlations between the inputs and the hash values are not pseudo random, the {$Receiver$} could learn {$s$}, and thereby all of {$M$}.
+</p>
+<div class='vspace'></div><h1>Summary</h1>
+<p>In summary, this protocol reduces {$m$} instances of a 1-out-of-{$n$} {$OT$} to a small security parameter number of 1-out-of-2 {$OT$}s. In practice {$m$} can be several orders of magnitude larger than the security parameter {$k$}. For example {$m=30000, k=256$}. This yields a significant performance increase over a naïve implementation of {$m$} instances of a 1-out-of-{$n$} {$OT$}. At the time this paper was published, the protocol results in a logarithmic improvement over the state of the art, which translates to an approximate speed up of 5 fold.
+</p>
+<p class='vspace'>In addition, this 1-out-of-{$n$} protocol yields a performance improvement for the 1-out-of-2 variant when they are implemented by a black box use of this  1-out-of-{$n$} protocol. Beyond these improvement, KK describe another optimization by using a pseudo random generator instead of the completely random matrix <span  style='color: green;'>{$T_0$}</span>.
+</p>
+<div class='vspace'></div><h3>References:</h3>
+<p><a class='wikilink' href='indexea27.html?n=Paper.IKNP03'>IKNP03</a>
+</p>
+<div class='vspace'></div><h3>Other links:</h3>
+<p><a class='urllink' href='http://www.youtube.com/watch?v=AgPZVecLuXs' rel='nofollow'>CRYPTO presentation video</a>
+</p>
+<div class='vspace'></div><h3>Categories:</h3>
+<p><a class='wikilink' href='indexfbef.html?n=PaperCategory.OTExtension'>OTExtension</a> <a class='categorylink' href='indexc56a.html?n=Category.Todo'>Todo</a>
+</p>
+</div>
+
+															</div>
+															<div id="right">
+															<!--PageSearchFmt--><!--/PageSearchFmt-->
+																<div id="links">
+																<!--PageRightFmt-->
+																<ul><li><a class='wikilink' href='indexf462.html?n=Main.HomePage'>Home page</a>
+</li><li>All papers, by:
+<ul><li>.. <a class='wikilink' href='index4c80.html?n=Main.AllPapersByCategory'>category</a>
+</li><li>.. <a class='wikilink' href='index4ab1.html?n=Main.AllPapers'>author names</a>
+</li><li>.. <a class='wikilink' href='index8eb5.html?n=Main.AllPapersByDate'>publication date</a>
+</li><li>.. <a class='wikilink' href='index7c1d.html?n=Main.AllPapersByLastAdded'>recently added</a>
+</li><li>.. <a class='wikilink' href='index04f6.html?n=Main.AllPapersByLastUpdate'>recently updated</a>
+</li></ul></li><li><a class='wikilink' href='index3b29.html?n=Glossary.Index'>Glossary</a>
+</li><li><a class='wikilink' href='index85c1.html?n=Main.About'>About</a>
+</li><li>Just <a class='wikilink' href='indexf333.html?n=Main.GettingStarted'>getting started</a> in MPC?
+</li><li><a class='wikilink' href='index6457.html?n=Main.Guidelines'>Guidelines</a>
+</li><li><a class='wikilink' href='indexe90d.html?n=Main.TodoList'>Todo List</a>
+</li></ul><p class='vspace sidehead'> Search Papers
+</p><ul><li><form  class='wikisearch' action='https://web.engr.oregonstate.edu/~rosulekm/scbib/index.php?n=Paper.KK13' method='get'><input type='hidden' name='n' value='Paper.KK13' /><input type='hidden' name='group' value='Paper' /><input type='hidden' name='fmt' value='#papers' /><input type='hidden' name='order' value='SideBar' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value=''   class='inputbox searchbox' size='15' /><input type='submit' 
+    class='inputbutton searchbutton' value='go' /></form>
+</li></ul><p class='vspace sidehead'> Bibliography Categories
+</p><div class='fpltemplate'><ul><li><a class='wikilink' href='indexbef5.html?n=PaperCategory.Circuit'>Circuit constructions &amp; optimizations</a>
+</li><li><a class='wikilink' href='index59da.html?n=PaperCategory.CutAndChoose'>Cut-and-choose mechanisms</a>
+</li><li><a class='wikilink' href='index7d9b.html?n=PaperCategory.Garbling'>Garbling methods</a>
+</li><li><a class='wikilink' href='index33db.html?n=PaperCategory.Implementations'>Implementations</a>
+</li><li><a class='wikilink' href='indexfbef.html?n=PaperCategory.OTExtension'>Oblivious transfer extension</a>
+</li><li><a class='wikilink' href='index9dcc.html?n=PaperCategory.Paradigms'>Protocol paradigms</a>
+</li><li><a class='wikilink' href='index4a54.html?n=PaperCategory.Reference'>Reference works</a>
+</li><li><a class='wikilink' href='index0527.html?n=PaperCategory.SecurityModels'>Security models</a>
+</li><li><a class='wikilink' href='indexb67d.html?n=PaperCategory.SpecialPurpose'>Special-purpose protocols</a>
+</li></ul>
+</div>
+<div class='vspace'></div>
+
+																<!--/PageRightFmt-->
+																</div>
+															</div>
+														</div>
+														<div id="footer_container">
+															<div id="footer">
+
+															</div>
+														</div>
+														<div id="credits">
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+<!-- /#content-inner -->
+										</div>
+<!-- /#content -->
+									</div>
+<!-- /#main-inner -->
+								
+<!-- /#main -->
+<!-- END DRUPAL MAIN -->
+							</div>
+<!-- interior -->
+<!-- START CHECK FOR RIGHT COL - if there is a content, end the main content's grid unit, open the right content's grid unit -->
+<!-- END CHECK FOR RIGHT COL - grid unit and holder closed -->
+						</div>
+<!-- /yui-b -->
+					</div>
+<!-- /yui-main -->
+<!-- START CHECK FOR LEFT COL -->
+<!--  END CHECK FOR LEFT COL -->
+				</div>
+<!-- /#bd -->
+			</div>
+<!-- /#page-inner -->
+		</div>
+<!-- /#page -->
+	</div>
+<!-- /doc -->
+</div>
+<!-- top-bg -->
+<div id="ft" role="contentinfo" class="yui-t2">
+	<div id="ft-inner">
+<!-- START CONTACT -->
+		<div class="yui-b">
+			<div class="interior">
+				<div id="contact">
+					<div id="contact-inner" class="region region-contact">
+<!--  START DEFAULT OSU FOOTER TEXT -->
+						<p class="osu-footer-text content">
+							<a href="http://oregonstate.edu/copyright">Copyright</a> &copy;2018<br> Oregon State University<br> <a href="http://oregonstate.edu/disclaimer">Disclaimer</a> 
+						</p>
+
+<!--  END START DEFAULT OSU FOOTER TEXT -->
+					</div>
+<!-- /#contact-inner -->
+				</div>
+<!-- /#contact -->
+			</div>
+<!-- /interior -->
+		</div>
+<!-- END CONTACT -->
+		<div class="yui-b first">
+			<div class="interior">
+<!-- START FOOTER -->
+															<div class="osu-footer-text content">
+															<!--PageFooterFmt-->
+															<p><small>Page last modified on August 17, 2014, at 10:09 PM</small>
+</p>
+
+															
+															<!--/PageFooterFmt-->
+															</div>
+
+			</div>
+<!-- /interior -->
+		</div>
+<!-- END FOOTER -->
+	</div>
+<!-- /ft-inner -->
+</div>
+<!-- /ft -->
+<!--[if IE 6]>
+</div>
+<![endif]-->
+<!--[if IE 7]>
+</div>
+<![endif]-->
+<!--HTMLFooter--><script type="text/javascript"
+    src="../../../secure.engr.oregonstate.edu/wiki/pmwiki/pub/autoplay.js"></script>
+</body>
+
+<!-- Mirrored from web.engr.oregonstate.edu/~rosulekm/scbib/index.php?n=Paper.KK13 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 Apr 2018 19:52:14 GMT -->
+</html>

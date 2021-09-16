@@ -1,0 +1,347 @@
+<html>
+  
+<!-- Mirrored from web.engr.oregonstate.edu/~rosulekm/cs427/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 Apr 2018 19:34:02 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>CS 427/519</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif|Vollkorn' rel='stylesheet' type='text/css'>
+    <script src="../../../use.fontawesome.com/9274001210.js"></script>
+    <link rel="stylesheet" type="text/css" href="../home.css"/>
+    <script src="../www/jquery.min.js"></script>
+    <script src="../home.js"></script>
+  </head>
+  <body>
+    <div class="topfold">
+      <img src="cs427.png" style="width: 300px">
+    </div>
+    <div class="header">Intro to Cryptography</div>
+    <div class="botfold"> 
+      <div class="affiliation">Oregon State University, Winter 2018</div>
+      <ul class="contact fa-ul">
+        <li> <i class="fa fa-li fa-calendar-check-o"></i><span>MWF @ 1, in LINC 314</span></li>
+        <li> <i class="fa fa-li fa-user"></i><span>Prof. <a href="../index.html">Mike Rosulek</a><br>rosulekm@eecs.oregonstate.edu<br>Office hours MW 2 in KEC 3063</span></li>
+        <li> <i class="fa fa-li fa-question-circle"></i><span>TA Peter Rindal<br>rindalp@oregonstate<br>Office hours TR 3 in KEC atrium</span></li>
+      </ul>
+    </div>
+    <div class="nav"> <a href="#news" class="navlink">news</a><a href="#materials" class="navlink">materials</a><a href="#schedule" class="navlink">schedule</a></div>
+    <div class="content">
+      <p>Cryptography is about using computation to protect information in the presence of adversarial behavior. In this course, you will learn how to reason about security properties in a mathematically rigorous way. You will learn the fundamental building blocks of cryptography: pseudorandom functions, encryption, hash functions, message authentication, key agreement.</p>
+      <h1>News<a name="news" class="anchor">&#8203;</a></h1>
+      <div class="schedule narrow">
+        <div class="schedline">
+          <div class="scheddate">Mar 14</div>
+          <div class="scheditem">Final exam will be Thursday 12-2.</div>
+        </div>
+        <div class="schedline">
+          <div class="scheddate">Mar 7</div>
+          <div class="scheditem"><a href="hw7.pdf">HW7</a> released, due Mar 14.</div>
+        </div>
+        <div class="schedline">
+          <div class="scheddate">Feb 26</div>
+          <div class="scheditem"><a href="hw6.pdf">HW6</a> released, due Mar 5.</div>
+        </div>
+        <div class="schedline">
+          <div class="scheddate">Feb 19</div>
+          <div class="scheditem"><a href="hw5.pdf">HW5</a> released, due Feb 26.</div>
+        </div>
+        <div class="schedline">
+          <div class="scheddate">Feb 13</div>
+          <div class="scheditem"><a href="proj.pdf">Project guidelines</a> released.</div>
+        </div>
+        <div class="schedline">
+          <div class="scheddate">Feb 6</div>
+          <div class="scheditem"><a href="hw4.pdf">HW4</a> released, due Feb 12.</div>
+        </div>
+        <div class="schedline">
+          <div class="scheddate">Jan 29</div>
+          <div class="scheditem"><a href="hw3.pdf">HW3</a> released, due Feb 5.</div>
+        </div>
+        <div class="schedline">
+          <div class="scheddate">Jan 22</div>
+          <div class="scheditem"><a href="hw2.pdf">HW2</a> released, due Jan 29.</div>
+        </div>
+        <div class="schedline">
+          <div class="scheddate">Jan 12</div>
+          <div class="scheditem"><a href="hw1.pdf">HW1</a> released, due Jan 19.</div>
+        </div>
+        <div class="schedline">
+          <div class="scheddate">Jan 11</div>
+          <div class="scheditem">TA office hours announced (see header above).</div>
+        </div>
+        <div class="schedline">
+          <div class="scheddate">Jan 2</div>
+          <div class="scheditem">Website goes live.</div>
+        </div>
+      </div>
+
+      <h1>Materials<a name="materials" class="anchor">&#8203;</a></h1>
+      <h2>Handouts</h2>
+          <ul>
+          <li> <a href="syll.pdf">Syllabus</a></li>
+          <li> <a href="proj.pdf">Project guidelines</a></li>
+          <li> <a href="pari.txt"><tt>pari</tt> cheat sheet</a></li>
+          <li> <a href="example.tex">LaTeX headers/examples</a></li>
+          </ul>
+      <h2>Homeworks</h2>
+          <ul>
+          <li> <a href="hw1.pdf">HW1</a>, due Jan 19.</li>
+          <li> <a href="hw2.pdf">HW2</a>, due Jan 29.</li>
+          <li> <a href="hw3.pdf">HW3</a>, due Feb 5.</li>
+          <li> <a href="hw4.pdf">HW4</a>, due Feb 12.</li>
+          <li> <a href="hw5.pdf">HW5</a>, due Feb 26.</li>
+          <li> <a href="hw6.pdf">HW6</a>, due Mar 5. <a href="hw6.txt">data</a></li>
+          <li> <a href="hw7.pdf">HW7</a>, due Mar 14. <a href="hw7.txt">data</a></li>
+          </ul>
+<!--          <p>(<a href="https://teach.engr.oregonstate.edu/teach.php?type=assignment">How to submit</a>)</p> -->
+      <h2>Textbook</h2>
+          <p>We will be using my free textbook, <i><a href="../crypto/index.html">The Joy of Cryptography</a></i>. The textbook is still in draft form, and may be updated often during the quarter. Last update: <b>Jan 22</b></p>
+        <ol start="0">
+        <li> <a href="../crypto/chap0.pdf">Review of Concepts &amp; Notation</a></li>
+        <li> <a href="../crypto/chap1.pdf">One-Time Pad</a></li>
+        <li> <a href="../crypto/chap2.pdf">The Basics of Provable Security</a></li>
+        <li> <a href="../crypto/chap3.pdf">Secret Sharing</a></li>
+        <li> <a href="../crypto/chap4.pdf">Basing Cryptography on Limits of Computation</a></li>
+        <li> <a href="../crypto/chap5.pdf">Pseudorandom Generators</a></li>
+        <li> <a href="../crypto/chap6.pdf">Pseudorandom Functions</a></li>
+        <li> <a href="../crypto/chap7.pdf">Pseudorandom Permutations</a></li>
+        <li> <a href="../crypto/chap8.pdf">Security against Chosen Plaintext Attacks</a></li>
+        <li> <a href="../crypto/chap9.pdf">Block Cipher Modes of Operation</a></li>
+        <li> <a href="../crypto/chap10.pdf">Chosen Ciphertext Attacks</a></li>
+        <li> <a href="../crypto/chap11.pdf">Message Authentication Codes</a></li>
+        <li> <a href="../crypto/chap12.pdf">Hash Functions</a></li>
+        <li> <a href="../crypto/chap13.pdf">The RSA Function</a></li>
+        <li> <a href="../crypto/chap14.pdf">Diffie-Hellman Key Agreement</a></li>
+        <li> <a href="../crypto/chap15.pdf">Public-Key Encryption</a></li>
+        <li style="list-style-type: square;"> <a href="../crypto/crypto.pdf"><b>Everything</b></a></li>
+        </ol>
+          </ul>
+      <h2>Other</h2>
+        Other helpful references:
+        <ul>
+        <li> <a class=pdf href="https://www.cs.cornell.edu/courses/cs4830/2010fa/lecnotes.pdf">A Course in Cryptography</a>, Rafael Pass &amp; abhi shelat (free)</li>
+        <li> <a href="https://www.cs.bris.ac.uk/~nigel/Crypto_Book/">Cryptography, An Introduction</a>, Nigel Smart (free)</li>
+        <li> <a href="http://www.cs.umd.edu/~jkatz/imc.html">Introduction to Modern Cryptography</a>, Jonathan Katz &amp; Yehuda Lindell</li>
+        <li> <a href="https://cseweb.ucsd.edu/~mihir/cse207/classnotes.html">Introduction to Modern Cryptography</a>, Mihir Bellare &amp; Phil Rogaway (free)</li>
+        </ul>
+
+
+      <h1>Schedule<a name="schedule" class="anchor">&#8203;</a></h1>
+        <div class="schedule" id="theschedule"></div>
+
+
+    </div>
+  </body>
+
+<!-- Mirrored from web.engr.oregonstate.edu/~rosulekm/cs427/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 Apr 2018 19:44:32 GMT -->
+</html>
+
+
+
+<script type="text/javascript">
+    var lec = [
+        { title: "Getting our bearings",
+           read: "-",
+            vwb: 1
+        },
+
+        { title: "One-time pad",
+           read: "1",
+            vwb: 2
+        },
+
+        { title: "Fundamental concepts for provable security",
+           read: "2.1-2.2",
+            vwb: 3
+        },
+
+        { title: "Security proofs, attacks <a href='otp-proof.pdf' class='pubtag'>OTP sec</a>",
+           read: "2.3-2.4",
+            vwb: 4
+        },
+
+        { title: "Secret sharing, Shamir secret sharing <a href='../crypto/xor-sss.pdf' class='pubtag'>(2,2)-SSS</a>  <a class='pubtag' href='lec/lec05.txt'>pari log</a>",
+           read: "3",
+            vwb: 5
+        },
+
+        { title: "Computational crypto, negligible functions, birthday bounds",
+           read: "4",
+            vwb: 6
+        },
+
+        { title: "Pseudorandom generators <a href='../crypto/potp-proof.pdf' class='pubtag'>pseudo OTP</a> <a href='../crypto/prg-feedback.pdf' class='pubtag'>PRG feedback</a>",
+           read: 5,
+            vwb: 7
+        },
+
+        { title: "Pseudorandom functions",
+           read: 6,
+            vwb: 8
+        },
+
+        { title: "Pseudorandom permutations <a class='pubtag' href='lec/lec09.txt'>python log</a>",
+           read: 7,
+            vwb: 9
+        },
+
+        { title: "Chosen plaintext attacks <a href='../crypto/prf-cpa.pdf' class='pubtag'>CPA via PRF</a>" ,
+           read: 8,
+            vwb: 10
+        },
+
+        { title: "Chosen plaintext attacks continued" ,
+           read: 8,
+            vwb: "10b"
+        },
+
+
+        { title: "Block cipher modes <ul><li><a href='https://blog.filippo.io/the-ecb-penguin/'>ECB penguin</a><li><a href='https://nakedsecurity.sophos.com/2013/11/04/anatomy-of-a-password-disaster-adobes-giant-sized-cryptographic-blunder/'>Adobe password disaster</a><li><a href='http://www.cs.washington.edu/research/security/usenix07devices.pdf'>identify encrypted movie streaming</a><li><a href='http://cs.unc.edu/~fabian/papers/foniks-oak11.pdf'>reconstructing speech from encrypted VoIP</a></ul>",
+           read: 9,
+            vwb: 11
+        },
+
+        { title: "Padding oracle attacks <a href='/~rosulekm/crypto/padding.html' class='pubtag'>demo</a> <a href='https://www.youtube.com/watch?v=e46A-PUpDvk' class='pubtag'>real-life attack video (LOUD)</a>",
+           read: "10.1",
+            vwb: 12
+        },
+
+        { title: "Padding oracle attacks continued, chosen ciphertext security",
+           read: 10,
+            vwb: 13
+        },
+
+
+        { title: "Message authentication codes <a href='../crypto/enc-then-mac.pdf' class='pubtag'>Enc-then-MAC</a>",
+           read: 11,
+            vwb: 14
+        },
+
+//        { title: "Authenticated encryption and advanced primitives",
+//           read: "tba",
+//            vwb: 17
+//        },
+
+        { title: "Review",
+           read: "-",
+            vwb: 15
+        },
+
+        { title: "<span class='holiday'>Midterm Exam (in class)</span>",
+           read: "",
+        },
+
+        { title: "Hash functions",
+           read: "12.1",
+            vwb: 16
+        },
+
+        { title: "Merkle-Damg&aring;rd hashes, length extension attacks",
+           read: "12.2-4",
+            vwb: 17
+        },
+
+        { title: "RSA basics <a href='lec/lec18.txt' class='pubtag'>pari log</a>",
+           read: "13.1-2",
+            vwb: 18
+        },
+
+        { title: "Chinese remainder theorem and applications <a href='lec/lec19.txt' class=pubtag>pari log</a>",
+           read: "13.3",
+            vwb: 19        
+        },
+
+        { title: "Security of RSA vs factoring <a href='lec/lec20.txt' class=pubtag>pari log</a>",
+           read: "13.4-5",
+            vwb: 20
+        },
+
+        { title: "Diffie-Hellman key agreement <a href='lec/lec21.txt' class=pubtag>pari log</a>",
+           read: 14,
+            vwb: 21
+        },
+
+        { title: "Hybrid encryption, Elgamal encryption <a href='../crypto/hybrid-enc.pdf' class='pubtag'>hybrid enc</a> <a href='lec/lec21.txt' class=pubtag>pari log</a>",
+           read: "15",
+            vwb: 22
+        },
+
+        { title: "Digital signatures",
+           read: "tba",
+            vwb: 23
+        },
+
+        { title: "Hash-based signatures",
+           read: "tba",
+            vwb: 24
+        },
+
+
+        { title: "Off-the-record messaging",
+           read: "<a href='https://otr.cypherpunks.ca/otr-wpes.pdf' class='pubtag'>otr</a>",
+            vwb: 25
+        },
+
+        { title: "Private set intersection",
+           read: "-",
+            vwb: 26
+        },
+
+        { title: "Exam review",
+           read: "tba",
+            vwb: 27
+        },
+
+        { title: "Other fun stuff",
+           read: "tba",
+//            vwb: 23
+        }
+
+
+    ];
+
+    var holidays = {};
+    holidays[(new Date("2018/01/15")).toString()] = "<b>No class:</b> MLK day";
+
+    var start = new Date("2018/01/08");
+    var end   = new Date("2018/03/16");
+
+    var dowmap = { 1: "M", 3: "W", 5: "F" };
+    var monmap = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                  "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+    for (var d = start; d <= end ; d.setDate( d.getDate() + 1 )) {
+        if (dowmap[d.getDay()]) {
+            var title = "";
+            var vwb   = "";
+            var read  = "";
+            if (holidays[d.toString()]) {
+                title = "<span class='holiday'>" + holidays[d.toString()] + "</span>";
+            } else {
+                var l = lec.shift();
+                title = l.title;
+                if (l.read) {
+                    read  = l.read;
+                }
+                if (l.vwb) {
+                    if (l.vwb < 10) l.vwb = "0" + l.vwb;
+                    vwb = "<a href='lec/lec" + l.vwb + ".pdf' class='pubtag'><i class='fa fa-desktop'></i></a>";
+                }
+            }
+
+            var thedate = monmap[d.getMonth()] + " " + d.getDate();
+            var thedow  = dowmap[d.getDay()];
+
+            var $day = $("<div class='schedline'>");
+            $day.append("<div class='scheddate'>" + thedate + "</span>");
+            $day.append("<div class='schedread'>" + read + "</span>");
+            $day.append("<div title='virtual whiteboard' class='schedlink'>" + vwb + "</span>");
+            $day.append("<div class='scheditem'>" + title + "</span>");
+
+            $("#theschedule").append($day);
+        }
+    }
+
+
+</script>
+

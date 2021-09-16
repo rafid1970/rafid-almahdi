@@ -1,0 +1,256 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Vollkorn';
+  font-family: 'droid serif', sans-serif;
+  letter-spacing: 0px;
+  background: #f8f8f8;
+}
+div,
+a,
+span {
+  transition: all 200ms;
+}
+.content a,
+.content a:visited {
+  color: #C47335;
+}
+.content a:hover {
+  color: #dda982;
+}
+.content ul {
+  margin-top: 0.3em;
+}
+/* foldable header */
+.topfold,
+.botfold,
+.header,
+.nav {
+  width: 100%;
+  text-align: center;
+  background: #373737;
+}
+.topfold {
+  background: linear-gradient(to bottom, #040404 0%, #373737 60%, #373737 100%);
+  padding: 1rem 0;
+}
+.header {
+  z-index: 1;
+  padding: 5px 0;
+  height: 40px;
+  margin-bottom: -50px;
+  font-size: 30px;
+  color: #a5bed9;
+  color: #89abce;
+  transition: color 1000ms;
+}
+.header.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  color: #888;
+}
+.botfold {
+  margin-top: 50px;
+  color: #ccc;
+  padding-bottom: 1rem;
+}
+.nav {
+  z-index: 1;
+  height: 22px;
+  padding: 5px 0;
+  margin-bottom: -32px;
+  transition: box-shadow 500ms;
+  background: #385E86;
+  font-family: "droid sans";
+  letter-spacing: 0.8px;
+}
+.nav.sticky {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  z-index: 2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+/* stuff inside header */
+.navlink {
+  padding: 0 1em;
+  text-decoration: none;
+  color: #adc4dd;
+  text-transform: uppercase;
+}
+.navlink:hover,
+.navlink.active:hover {
+  color: white;
+  text-shadow: 0px 0px 20px #0b121a;
+}
+.navlink.active {
+  color: #d1deec;
+}
+.headshot {
+  background: #333;
+  border: 2px solid black;
+  width: 150px;
+  height: 200px;
+  display: inline-block;
+  color: #333;
+}
+ul.contact {
+  display: inline-block;
+  text-align: left;
+}
+ul.contact li {
+  padding-bottom: 0.4em;
+}
+ul.contact a {
+  text-decoration: none;
+  color: #ccc;
+}
+ul.contact a:hover {
+  color: #fff;
+  text-shadow: 0px 0px 20px black;
+}
+tt.pgp {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 0.2em;
+}
+/* main content */
+.content {
+  max-width: 650px;
+  margin: 5em auto 2em auto;
+  padding: 0 0.5em;
+  text-align: justify;
+}
+h1 {
+  margin-top: 1.5em;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  color: #adc4dd;
+  letter-spacing: 8px;
+  border-bottom: 1px solid #dbe5f0;
+  font-family: "droid sans";
+  font-size: 2rem;
+}
+h2 {
+  font-family: "droid sans";
+  color: #385E86;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+/* correct internal anchors for header */
+a.anchor {
+  position: relative;
+  top: -100px;
+  user-select: none;
+}
+/* publication list */
+.publist {
+  text-align: left;
+}
+.pubitem {
+  margin-top: 1em;
+}
+.pubtag {
+  background: #f3e0d2;
+  color: #C47335 !important;
+  padding: 0.1em 0.3em;
+  font-size: 0.9em;
+  -x-border-radius: 0 0 0.5em 0;
+  font-family: "Droid Sans";
+  margin: 0 0 0 0.4em;
+  display: inline-block;
+  text-decoration: none;
+  box-shadow: 1px 1px 1px #ccc;
+  transition: all 200ms, opacity 500ms;
+}
+.publist .pubtag {
+  opacity: 0.0;
+}
+.publist:hover .pubtag {
+  opacity: 1.0;
+}
+.pubtag:hover {
+  background: #C47335;
+  color: #fff !important;
+}
+.pubtitle {
+  font-weight: bold;
+  text-indent: 0em;
+  margin-left: 0em;
+}
+.pubauthors {
+  font-style: italic;
+}
+.pubauthors,
+.pubinfo {
+  margin-left: 2em;
+}
+/* two column layout, adopted from purecss */
+.twocols {
+  letter-spacing: -0.31em;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  display: -ms-flexbox;
+  -ms-flex-flow: row wrap;
+  -ms-align-content: flex-start;
+  -webkit-align-content: flex-start;
+  align-content: flex-start;
+}
+.col {
+  width: 50%;
+  display: inline-block;
+  zoom: 1;
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  text-align: left;
+}
+/*****/
+.scheddate {
+  width: 4.5em;
+  float: left;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #6591bf;
+  letter-spacing: 1px;
+  font-family: "droid sans";
+}
+.schedread {
+  width: 4em;
+  float: left;
+  text-align: center;
+  color: #888;
+  font-size: 0.9em;
+}
+.schedlink {
+  width: 2.5em;
+  float: left;
+}
+.scheditem {
+  margin-left: 11em;
+  text-align: left;
+}
+.schedule.narrow .scheddate {
+  width: 6em;
+}
+.schedule.narrow .scheditem {
+  margin-left: 6em;
+}
+.schedline {
+  clear: left;
+  padding: 0.5em;
+}
+.schedline:nth-child(odd) {
+  background: #eee;
+}
+.holiday {
+  color: #aaa;
+  font-family: "droid sans";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}

@@ -1,0 +1,285 @@
+<html>
+  
+<!-- Mirrored from web.engr.oregonstate.edu/~rosulekm/cs321h/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 Apr 2018 19:28:44 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>CS 321 &quaternions;</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif|Vollkorn' rel='stylesheet' type='text/css'>
+    <script src="../../../use.fontawesome.com/9274001210.js"></script>
+    <link rel="stylesheet" type="text/css" href="../home.css"/>
+    <script src="../www/jquery.min.js"></script>
+    <script src="../home.js"></script>
+  </head>
+  <body>
+    <div class="topfold">
+      <img src="cs321.png" style="width: 300px">
+    </div>
+    <div class="header"><span style="color: #C47335;">&quaternions;</span> Theory of Computation</div>
+    <div class="botfold"> 
+      <div class="affiliation">Oregon State University, Fall 2017</div>
+      <ul class="contact fa-ul">
+        <li> <i class="fa fa-li fa-calendar-check-o"></i><span>MWF @ 9, in STAG 112</span></li>
+        <li> <i class="fa fa-li fa-user"></i><span>Prof. <a href="../index.html">Mike Rosulek</a><br>rosulekm@eecs.oregonstate.edu<br>Office KEC 3063</span></li>
+      </ul>
+    </div>
+    <div class="nav"> <a href="#news" class="navlink">news</a><a href="#materials" class="navlink">materials</a><a href="#schedule" class="navlink">schedule</a></div>
+    <div class="content">
+      <p>Theory of computation is about understanding the limits of what computers can do.</p>
+      <p>Note: I am teaching two sections of 321 this term (an honors section and a non-honors section). The two sections have different structure, different homeworks, different requirements. This page is for the <b>honors section</b>!</p>
+
+      <h1>News<a name="news" class="anchor">&#8203;</a></h1>
+      <div class="schedule narrow">
+        <div class="schedline">
+          <div class="scheddate">Nov 28</div>
+          <div class="scheditem"><b>Final exam</b> will be Thursday Dec 7 at 2pm (regular classroom)</div>
+        </div>
+        <div class="schedline">
+          <div class="scheddate">Nov 12</div>
+          <div class="scheditem">HW5 posted</div>
+        </div>
+        <div class="schedline">
+          <div class="scheddate">Oct 30</div>
+          <div class="scheditem">HW4 posted</div>
+        </div>
+        <div class="schedline">
+          <div class="scheddate">Oct 18</div>
+          <div class="scheditem">HW3 deadline extended to Oct 23. Midterm date posted (Oct 27)</div>
+        </div>
+        <div class="schedline">
+          <div class="scheddate">Oct 13</div>
+          <div class="scheditem">HW3 released</div>
+        </div>
+        <div class="schedline">
+          <div class="scheddate">Oct 4</div>
+          <div class="scheditem">HW2 deadline extended to Oct 9</div>
+        </div>
+        <div class="schedline">
+          <div class="scheddate">Oct 2</div>
+          <div class="scheditem">HW2 released</div>
+        </div>
+        <div class="schedline">
+          <div class="scheddate">Sep 25</div>
+          <div class="scheditem">First homework is released</div>
+        </div>
+        <div class="schedline">
+          <div class="scheddate">Sep 14</div>
+          <div class="scheditem">The website is ready. Let's do some CStheory!</div>
+        </div>
+      </div>
+
+      <h1>Materials<a name="materials" class="anchor">&#8203;</a></h1>
+      <h2>Handouts</h2>
+          <ul>
+          <li> <a href="syll.pdf">Syllabus</a></li>
+          </ul>
+      <h2>Homeworks</h2>
+          <ul>
+          <li> <a href="hw1.pdf">Final Problems 1</a>, Due Sep 29</li>
+          <li> <a href="hw2.pdf">Final Problems 2</a>, Due Oct <strike>6</strike> 9</li>
+          <li> <a href="hw3.pdf">Final Problems 3</a>, Due Oct <strike>20</strike> 23</li>
+          <li> <a href="hw4.pdf">Final Problems 4</a>, Due Nov 6</li>
+          <li> <a href="hw5.pdf">Final Problems 5</a>, Due Nov 20</li>
+          </ul>
+
+      <h2>Textbook</h2>
+            <ul>
+            <li> <a href="https://www.google.com/search?q=978-0387949079">Automata and Computability</a>, by Dexter Kozen
+            </ul>
+
+
+      <h2>Resources</h2>
+        <ul>
+        <li class="li-e"> <a href="http://jeffe.cs.illinois.edu/teaching/algorithms/">Jeff Erickson lecture notes</a> (scroll down to "Models of Computation Notes")
+        <li class="li-fhp"> <a class=pdf href="http://sarielhp.org/teach/notes/373/book.pdf">Fleck/Har-Peled lecture notes</a>
+        <li class="li-f"> <a class=pdf href="https://www.cl.cam.ac.uk/teaching/1011/RLFA/LectureNotes.pdf">Marcelo Fiore lecture notes</a>
+        <li class="li-m"> <a class=pdf href="http://tuvalu.santafe.edu/~moore/automata-notes">Cristopher Moore lecture notes</a>
+        <li> <a href="https://archive.org/details/HopcroftUllman_cinderellabook">Intro to Automata Theory, Languages, and Computation</a>, a classic textbook by Hopcroft &amp; Ullman
+        <li> <a href="http://madebyevan.com/fsm/">Tool for drawing state machines</a>, by Evan Wallace
+        <li> <a href="https://regexr.com/">RegExr</a> tool for playing with "real world" regular expressions (by Grant Skinner)
+        <li> Chart of <a href="https://dev.w3.org/html5/html-author/charref">special characters</a> (copy/paste math symbols into your assignments)
+        </ul>
+
+      <h1>Schedule<a name="schedule" class="anchor">&#8203;</a></h1>
+        <div class="schedule" id="theschedule"></div>
+
+
+    </div>
+  </body>
+
+<!-- Mirrored from web.engr.oregonstate.edu/~rosulekm/cs321h/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 Apr 2018 19:30:47 GMT -->
+</html>
+
+
+
+<script type="text/javascript">
+    var lec = [
+        { title: "Debriefing &amp; pleasantries, then brain work",
+           read: "2",
+           vwb: "0"
+        },
+
+        { title: "Deterministic finite automata",
+           read: "3",
+           vwb: "1"
+        },
+
+        { title: "More regular sets",
+           read: "4 (-&half;)",
+            vwb: 2
+        },
+
+        { title: "Product construction",
+           read: "4 (&half;-)",
+            vwb: 3
+        },
+
+        { title: "Nondeterministic automata",
+           read: 5, vwb: 4
+        },
+
+        { title: "Subset construction",
+           read: 6,  vwb: 5
+        },
+
+        { title: "Regular expressions",
+           read: "7-8", vwb: 6
+        },
+
+        { title: "Regular expressions are regular",
+           read: 8, vwb: 7
+        },
+
+        { title: "Converting NFAs to regular expressions",
+           read: "<abbr title='Fleck/Har-Peled lecture notes'>FHP</abbr> 8", vwb: 8
+        },
+
+        { title: "Limitations of regular languages; pumping lemma",
+           read: "11", vwb: 9
+        },
+
+        { title: "More pumping lemma techniques",
+           read: "12", vwb: 10
+        },
+
+        { title: "DFA minimization",
+           read: "13", vwb: 11
+        },
+
+        { title: "DFA minimization",
+           read: "14", vwb: 12
+        },
+
+        { title: "Myhill-Nerode theorem",
+           read: "(15)16", vwb: 13
+        },
+
+        { title: "Context-free grammars",
+           read: "19", vwb: 14
+        },
+
+        { title: "Balanced parentheses",
+           read: "20", vwb: 15
+        },
+
+        { title: "Chomsky normal form",
+           read: "21 (-&half;)", vwb: 16
+        },
+
+        { title: "Pumping lemma for CFLs",
+           read: "22", vwb: 17
+        },
+
+        { title: "Pushdown automata",
+           read: "23", vwb: 18
+        },
+
+        { title: "Free-for-all",
+           read: ""
+        },
+
+        { title: "Converting a CFG to a PDA",
+           read: "24,FHP15", vwb: 19
+        },
+
+        { title: "Converting a PDA to a CFG",
+           read: "25", vwb: 20
+        },
+
+        { title: "Turing machines",
+           read: "28", vwb: 21
+        },
+
+        { title: "More Turing machines",
+           read: "29", vwb: 22
+        },
+
+//        { title: "Equivalent TM models",
+//           read: "30",
+//        },
+
+        { title: "Universal TMs, diagonalization <a class='pubtag' href='https://www.youtube.com/watch?v=92WHN-pAFCs'>video</a> <a class='pubtag' href='http://www.lel.ed.ac.uk/~gpullum/loopsnoop.html'>Dr Seuss version</a>",
+           read: "31",
+            vwb: 23
+        },
+
+        { title: "More undecidable problems",
+           read: "32",
+            vwb: 24
+        },
+
+        { title: "Reductions; <b>course evaluations</b>",
+           read: "33",
+            vwb: 25
+        },
+    ];
+
+    var holidays = {};
+    holidays[(new Date("2017/10/27")).toString()] = "<b>Midterm exam</b> in class";
+    holidays[(new Date("2017/11/06")).toString()] = "Mike traveling: class topic TBA";
+    holidays[(new Date("2017/11/08")).toString()] = "Mike traveling: class topic TBA";
+    holidays[(new Date("2017/11/10")).toString()] = "<b>No class:</b> Veterans Day holiday";
+    holidays[(new Date("2017/11/24")).toString()] = "<b>No class:</b> Thanksgiving holiday";
+
+    var start = new Date("2017/09/20");
+    var end   = new Date("2017/12/03");
+
+    var dowmap = { 1: "M", 3: "W", 5: "F" };
+    var monmap = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                  "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+    for (var d = start; d <= end ; d.setDate( d.getDate() + 1 )) {
+        if (dowmap[d.getDay()]) {
+            var title = "";
+            var vwb   = "";
+            var read  = "";
+            if (holidays[d.toString()]) {
+                title = "<span class='holiday'>" + holidays[d.toString()] + "</span>";
+            } else {
+                var l = lec.shift();
+                title = l.title;
+                if (l.read) {
+                    read  = l.read;
+                }
+                if (l.vwb) {
+                    if (l.vwb < 10) l.vwb = "0" + l.vwb;
+                    vwb = "<a href='lec/lec" + l.vwb + ".pdf' class='pubtag'><i class='fa fa-pencil-square-o'></i></a>";
+                }
+            }
+
+            var thedate = monmap[d.getMonth()] + " " + d.getDate();
+            var thedow  = dowmap[d.getDay()];
+
+            var $day = $("<div class='schedline'>");
+            $day.append("<div class='scheddate'>" + thedate + "</div>");
+            $day.append("<div class='schedread'>" + read + "</div>");
+            $day.append("<div title='assignment' class='schedlink'>" + vwb + "</div>");
+            $day.append("<div class='scheditem'>" + title + "</div>");
+
+            $("#theschedule").append($day);
+        }
+    }
+
+
+</script>
+

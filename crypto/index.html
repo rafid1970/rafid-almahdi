@@ -1,0 +1,111 @@
+<html>
+  
+<!-- Mirrored from web.engr.oregonstate.edu/~rosulekm/crypto/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 Apr 2018 19:44:32 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>The Joy of Cryptography</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif|Vollkorn' rel='stylesheet' type='text/css'>
+    <script src="../../../use.fontawesome.com/9274001210.js"></script>
+    <link rel="stylesheet" type="text/css" href="../home.css"/>
+    <script src="../www/jquery.min.js"></script>
+    <script src="../home.js"></script>
+  </head>
+  <body>
+    <div class="topfold">
+      <img src="shell.png" style="width:300px">
+    </div>
+    <div class="header">The Joy of Cryptography</div>
+    <div class="botfold"> 
+      <div class="affiliation">Undergraduate textbook by Mike Rosulek</div>
+    </div>
+    <div class="nav"> <a href="#contents" class="navlink">contents</a><a href="#supp" class="navlink">supplementary</a><a href="#other" class="navlink">other</a></div>
+    <div class="content">
+
+      <p><i>The Joy of Cryptography</i> is a textbook that I've been writing for CS427, my undergraduate course in cryptography.</p>
+      <h2>What's so special about it?</h2>
+      <p>It's free and will always be free (Creative Commons license)! It is supported by the Oregon State University <a href="http://open.oregonstate.edu/textbooks/">open textbook initiative</a>.</p>
+      <p>The pedagogical approach is anchored in formal definitions/proof of security, but in a way that I believe is more accessible than what is "traditional" in crypto. All security definitions are written in a unified and simplified "game-based" style. For an example of what security definitions look like in this style, see the <a href="sec-defs.pdf">index of security definitions</a> (which will make more sense after reading chapters 2 &amp; 4). For example proofs of security in this style, see the supplementary material below.</p>
+      <p>It contains over 120 exercises.</p>
+      <h2>Disclaimers:</h2>
+      <p> Everything here is in draft form. This will become evident as you read through the text. Still, I've been successful using the text as the primary reference in an actual course.</p>
+      <p> My course CS427 is only a 10-week course. For that reason, much important material is still missing from the text!</p>
+      <p> "<i>The Joy of Cryptography</i>" is a silly title, but all the sensible titles were already taken. It was at least better than "<i>You Can't Spell Cryptography without Cry</i>". Anyway, <u>actual joy not guaranteed.</u></p>
+      
+      <h1>Contents<a name="contents" class="anchor">&#8203;</a></h1>
+      <p><b><a href="crypto.pdf">Download the current draft</a></b> (PDF, Jan 22, 2018)</p>
+      <p>Current table of contents (links are for PDFs of individual chapters):</p>
+      <ol start="-1">
+        <li style="list-style-type: square;"> <a href="frontmatter.pdf">Foreword</a>
+        <li> <a href="chap0.pdf">Review of Concepts &amp; Notation</a>
+        <li> <a href="chap1.pdf">One-Time Pad</a>
+        <ul><li>One-Time Pad Definition<li>Properties of One-Time Pad</ul>
+        <li> <a href="chap2.pdf">The Basics of Provable Security</a>
+        <ul><li>Reasoning about Information Hiding via Code Libraries<li>A General-Purpose Security Definition for Encryption<li>How to Prove Security with the Hybrid Technique<li>How to Demonstrate Insecurity with Attacks</ul>
+        <li> <a href="chap3.pdf">Secret Sharing</a>
+        <ul><li>Definitions<li>A Simple 2-out-of-2 Scheme<li>Polynomial Interpolation<li>Shamir Secret Sharing<li>Visual Secret Sharing</ul>
+        <li> <a href="chap4.pdf">Basing Cryptography on Limits of Computation</a>
+        <ul><li>Polynomial-Time Computation<li>Negligible Probabilities<li>Indistinguishability<li>Sampling with Replacement &amp; the Birthday Bound</ul>
+        <li> <a href="chap5.pdf">Pseudorandom Generators</a>
+        <ul><li>Definition<li>Application: Shorter Keys in One-Time-Secret Encryption<li>Taking the Contrapositive Point-of-View<li>Extending the Stretch of a PRG</ul>
+        <li> <a href="chap6.pdf">Pseudorandom Functions</a>
+        <ul><li>Definition<li>Attacking Insecure PRFs<li>A Theoretical Construction of a PRF from a PRG</ul>
+        <li> <a href="chap7.pdf">Pseudorandom Permutations</a>
+        <ul><li>Definitions<li>Switching Lemma<li>Feistel Ciphers<li>Strong Pseudorandom Permutations</ul>
+        <li> <a href="chap8.pdf">Security against Chosen Plaintext Attacks</a>
+        <ul><li>Implications of CPA Security<li>Pseudorandom Ciphertexts<li>CPA-Secure Encryption from PRFs</ul>
+        <li> <a href="chap9.pdf">Block Cipher Modes of Operation</a>
+        <ul><li>Common Modes<li>CPA Security for Variable-Length Plaintexts<li>Security of OFB Mode<li>Padding &amp; Ciphertext Stealing</ul>
+        <li> <a href="chap10.pdf">Chosen Ciphertext Attacks</a>
+        <ul><li>Padding Oracle Attacks<li>What Went Wrong?<li>Defining CCA Security<li>CCA Insecurity of Block Cipher Modes<li>A Simple CCA-Secure Scheme</ul>
+        <li> <a href="chap11.pdf">Message Authentication Codes</a>
+        <ul><li>Security Definition<li>A PRF is a MAC<li>CBC-MAC<li>Encrypt-Then-MAC</ul>
+        <li> <a href="chap12.pdf">Hash Functions</a>
+        <ul><li>Defining Security<li>Hash-Then-MAC<li>Merkle-Damg&aring;rd Construction<li>Length-Extension Attacks</ul>
+        <li> <a href="chap13.pdf">The RSA Function</a>
+        <ul><li>Modular Arithmetic &amp; Number Theory<li>The RSA Function<li>Chinese Remainder Theorem<li>The Hardness of Factoring <i>N</i><li>Malleability of RSA, and Applications</ul>
+        <li> <a href="chap14.pdf">Diffie-Hellman Key Agreement</a>
+        <ul><li>Cyclic Groups<li>Diffie-Hellman Key Agreement<li>Decisional Diffie-Hellman Problem</ul>
+        <li> <a href="chap15.pdf">Public-Key Encryption</a>
+        <ul><li>Security Definitions<li>One-Time Security Implies Many-Time Security<li>ElGamal Encryption<li>Hybrid Encryption</ul>
+        <li style="list-style-type: square;"> <a href="sec-defs.pdf">Index of security definitions</a>
+      </ol>
+
+      <h1>Supplementary Material<a name="supp" class="anchor">&#8203;</a></h1>
+I have also provided some slide decks that visually illustrate the steps of some hybrid proofs from the text:
+
+      <ul>
+        <li> <a href="otp-proof.pdf">One-time secrecy of one-time pad</a> (&sect;2.2)
+        <li> <a href="xor-sss.pdf">Security of additive 2-out-of-2 secret sharing</a> (&sect;3.2)
+        <li> <a href="potp-proof.pdf">One-time secrecy of "pseudo-one-time pad"</a> (&sect;5.3)
+        <li> <a href="prg-feedback.pdf">Security of extending a PRG's stretch via a feedback construction</a> (&sect;5.5)
+        <li> <a href="prf-cpa.pdf">CPA security of the classical PRF-based encryption scheme</a> (&sect;8.3)
+        <li> <a href="enc-then-mac.pdf">CCA security of encrypt-then-MAC</a> (&sect;11.4)
+        <li> <a href="hybrid-enc.pdf">CPA security public-key hybrid encryption</a> (&sect;15.4)
+      </ul>
+        And an interactive padding oracle attack demo:
+        <ul>
+        <li> <a href="padding.html">Padding oracle attack demo</a>
+        </ul>
+
+      <h1>Other<a name="other" class="anchor">&#8203;</a></h1>
+
+      <p>For a <b>second opinion</b>, you might want to check out these other excellent references. They are also the reason I had to choose a silly name for mine -- all the good names were taken.</p>
+      <ul>
+        <li> <a class=pdf href="https://www.cs.cornell.edu/courses/cs4830/2010fa/lecnotes.pdf">A Course in Cryptography</a>, Rafael Pass &amp; abhi shelat (free)
+        <li> <a href="https://www.cs.bris.ac.uk/~nigel/Crypto_Book/">Cryptography, An Introduction</a>, Nigel Smart (free)
+        <li> <a href="http://www.cs.umd.edu/~jkatz/imc.html">Introduction to Modern Cryptography</a>, Jonathan Katz &amp; Yehuda Lindell
+        <li> <a href="https://cseweb.ucsd.edu/~mihir/cse207/classnotes.html">Introduction to Modern Cryptography</a>, Mihir Bellare &amp; Phil Rogaway (free)
+      </ul>
+
+
+      <center><img src="shells.jpg" class=headshot style="width:50%; height:auto; margin-top:36px;"></center>
+
+
+
+
+    </div>
+  </body>
+
+<!-- Mirrored from web.engr.oregonstate.edu/~rosulekm/crypto/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 Apr 2018 19:48:22 GMT -->
+</html>
